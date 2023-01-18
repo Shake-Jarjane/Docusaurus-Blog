@@ -1,21 +1,26 @@
+const { ALL } = require('dns')
 const path = require('path')
 const beian = '闽ICP备2020017848号-2'
+const license = 'CC BY-NC 4.0'
 
-const announcementBarContent = `🌟更新 2022 年终总结`
+const announcementBarContent = `Hi~ Welcome to my Blog 👋`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '愧怍的小站',
-  titleDelimiter: '-',
-  url: 'https://kuizuo.cn',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
-  projectName: 'blog',
-  tagline: '记录所学知识，领略编程之美',
+  title: 'Shake-Blog',
+  titleDelimiter: '🦖',
+  url: 'https://Shake-Jarjane.github.io', // 网站的 url 地址
+  baseUrl: '/',                           // 解析后的地址，如果设为 wsite，则 url 解析为https://xxx.xx/site
+  projectName: 'Shake-Jarjane.github.io', // {username}.github.io
+  organizationName: 'Shake-Jarjane',      // username
+  deploymentBranch: 'main',             // 部署的默认分支,如果部署到同一个仓库下则可不指定
+  onBrokenLinks: 'ignore',     // 编译遇到死链怎么处理
+
+  favicon: 'img/head.jpg',
+  tagline: '🥱',
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
-    image: 'img/logo.png',
+    image: 'img/head.jpg',
     announcementBar: {
       id: 'announcementBar-3',
       content: announcementBarContent,
@@ -23,43 +28,37 @@ const config = {
     metadata: [
       {
         name: 'keywords',
-        content:'愧怍'
+        content:'Shake'
       },
       {
         name: 'keywords',
-        content: 'blog, javascript, typescript, node, react, vue, web',
+        content: 'blog',
       },
       {
         name: 'keywords',
-        content: '编程爱好者, Web开发者, 写过爬虫, 学过逆向，现在主攻ts全栈',
+        content: '在嵌入式开发的道路上奔跑中',
       },
     ],
     docs: {
       sidebar: {
         hideable: true,
-      }
+        autoCollapseCategories: true,
+      },
     },
     navbar: {
-      title: '愧怍',
+      title: '加减',
       logo: {
-        alt: '愧怍',
-        src: 'img/logo.webp',
-        srcDark: 'img/logo.webp',
+        alt: '加减',
+        src: 'img/head.jpg',
+        srcDark: 'img/head.jpg',
       },
+      /* 滚动隐藏导航栏 */
       hideOnScroll: true,
       items: [
         {
-          label: '学习',
-          position: 'right',
+          label: '✒ Notes',
+          position: 'left',
           items: [
-            {
-              label: '标签',
-              to: 'tags',
-            },
-            {
-              label: '归档',
-              to: 'archive',
-            },
             {
               label: '笔记',
               to: 'docs/skill/',
@@ -69,125 +68,118 @@ const config = {
               to: 'docs/tools/',
             },
             {
-              label: '前端示例',
-              to: 'https://example.kuizuo.cn',
-            },
+              label: 'Test',
+              to: 'docs/Test',
+            }
           ],
         },
         {
-          label: '工具',
-          position: 'right',
+          label: '🗺 Blog',
+          position: 'left',
+          to: '/',
           items: [
             {
-              label: 'API服务',
-              to: 'https://api.kuizuo.cn',
+              label: '🏷 博文&分类',
+              to: 'tags',
             },
             {
-              label: 'JS代码还原',
-              to: 'https://js-de-obfuscator.kuizuo.cn',
-            },
-            {
-              label: 'CyberChef加密',
-              to: 'https://cipher.kuizuo.cn',
-            },
-            {
-              label: 'Transform',
-              to: 'https://transform.kuizuo.cn',
-            },
-            {
-              label: '网盘',
-              to: 'https://pan.kuizuo.cn',
+              label: '⏰ 时间轴',
+              to: 'archive',
             },
           ],
         },
         {
-          label: '导航',
+          label: '🔗 友链&导航',
           position: 'right',
           to: 'website',
         },
         {
-          label: '项目',
+          href: 'https://github.com/Shake-Jarjane',
           position: 'right',
-          to: 'project',
+          className: 'header-github-link',
         },
-         {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // 注释就是去掉导航栏的语言下拉选择栏
+        //  {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
       style: 'dark',
       links: [
+        // {
+        //   title: '学习',
+        //   items: [
+        //     {
+        //       label: '标签',
+        //       to: 'tags',
+        //     },
+        //     {
+        //       label: '归档',
+        //       to: 'archive',
+        //     },
+        //     {
+        //       label: '技术笔记',
+        //       to: 'docs/skill',
+        //     },
+        //     {
+        //       label: '实战项目',
+        //       to: 'project',
+        //     },
+        //     {
+        //       label: '前端示例',
+        //       to: 'https://example.kuizuo.cn',
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: '社交媒体',
+        //   items: [
+        //     {
+        //       label: '关于我',
+        //       to: '/about',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/kuizuo',
+        //     },
+        //     {
+        //       label: '掘金',
+        //       href: 'https://juejin.cn/user/1565318510545901',
+        //     },
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discord.gg/M8cVcjDxkz',
+        //     }
+        //   ],
+        // },
         {
-          title: '学习',
+          title: 'More',
           items: [
-            {
-              label: '标签',
-              to: 'tags',
-            },
-            {
-              label: '归档',
-              to: 'archive',
-            },
-            {
-              label: '技术笔记',
-              to: 'docs/skill',
-            },
-            {
-              label: '实战项目',
-              to: 'project',
-            },
-            {
-              label: '前端示例',
-              to: 'https://example.kuizuo.cn',
-            },
-          ],
-        },
-        {
-          title: '社交媒体',
-          items: [
-            {
-              label: '关于我',
-              to: '/about',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/kuizuo',
-            },
-            {
-              label: '掘金',
-              href: 'https://juejin.cn/user/1565318510545901',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/M8cVcjDxkz',
-            }
-          ],
-        },
-        {
-          title: '更多',
-          items: [{
-            label: '友链',
-            position: 'right',
-            to: 'friends',
-          }, {
-            label: '导航',
-            position: 'right',
-            to: 'website',
-          },
+          // {
+          //   label: '友链',
+          //   position: 'right',
+          //   to: 'friends',
+          // }, {
+          //   label: '导航',
+          //   position: 'right',
+          //   to: 'website',
+          // },
           {
-            html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`
+            html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:40px" src="/img/buildwith.png" /><a/>`
           },
         ],
         },
       ],
-      copyright: `<p><a href="http://beian.miit.gov.cn/" >${beian}</a></p><p>Copyright © 2020 - PRESENT 愧怍 Built with Docusaurus.</p>`,
+      // copyright: `Copyright © 2022 - ${new Date().getFullYear()} By Shake. Built with Docusaurus.</> | <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a>  `,
+      // copyright: `Copyright © 2022 - ${new Date().getFullYear()} By Shake. Built with Docusaurus.</> | <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a> <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"></a></p> `,
+    
     },
     prism: {
-      theme: require('prism-react-renderer/themes/vsLight'),
+      theme: require('prism-react-renderer/themes/vsDark'),
       darkTheme: require('prism-react-renderer/themes/vsDark'),
-      additionalLanguages: ['java', 'php', 'rust', 'toml'],
+      additionalLanguages: ['java', 'php', 'rust', 'toml', 'cpp'],
       defaultLanguage: 'javascript',
       magicComments: [
         {
@@ -236,14 +228,15 @@ const config = {
       playgroundPosition: 'top',
     },
     socials: {
-      github: 'https://github.com/kuizuo',
-      twitter: 'https://twitter.com/kuizuo',
-      juejin: 'https://juejin.cn/user/1565318510545901',
-      csdn: 'https://blog.csdn.net/kuizuo12',
-      qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=911993023&amp;site=qq',
-      zhihu: 'https://www.zhihu.com/people/kuizuo',
-      cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
+      github: 'https://github.com/Shake-Jarjane',
+      qq: 'http://wpa.qq.com/msgrd?v=3&uin=2531535061&site=qq&menu=yes',
+      wechat: 'https://cdn-us.imgs.moe/2023/01/17/63c66e6fe7adf.jpg',
     },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    }
   },
   presets: [
     [
@@ -253,6 +246,7 @@ const config = {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
@@ -281,18 +275,24 @@ const config = {
       path.resolve(__dirname, './src/plugin/plugin-content-blog'), {
         path: 'blog',
         routeBasePath: '/',
+        
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+        `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
-        blogSidebarCount: 10,
-        postsPerPage: 10,
+        blogSidebarTitle: 'Blog List 🛴',
+        blogSidebarCount: ALL,
+        /* 首页博文每页显示的文章数 */
+        postsPerPage: 8,
         showReadingTime: true,
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-          defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+        frontMatter.hide_reading_time ? 
+        undefined :
+        defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {
           type: 'all',
-          title: '愧怍',
-          copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          title: '加减',
+          description: '',
+          copyright: `Copyright © ${new Date().getFullYear()} 加减 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       }
     ],
@@ -320,7 +320,7 @@ const config = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(51 139 255)',
+            content: 'rgb(61 139 255)',
           },
         ],
       },
@@ -329,7 +329,7 @@ const config = {
   stylesheets: [],
   i18n: {
     defaultLocale: 'zh',
-    locales: ['en', 'zh'],
+    locales: ['zh'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',

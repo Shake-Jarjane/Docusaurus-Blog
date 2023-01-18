@@ -75,7 +75,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
           )}
           {readingTime && (
             <>
-              <Icon icon='ri:time-fill' color='#c4d3e0' />
+              <Icon icon='ri:time-fill' color='#4d3e0' />
               <span
                 className={clsx(styles.blogPostReadTime, 'blog__readingTime')}>
                 <ReadingTime readingTime={readingTime} />

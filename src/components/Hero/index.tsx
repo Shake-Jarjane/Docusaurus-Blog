@@ -12,33 +12,74 @@ import { Icon } from '@iconify/react';
 
 import styles from './styles.module.scss';
 
+import clsx from 'clsx';
+import HomepageInfo from '@site/src/components/HomepageInfo';
+
+/* 桌面下滑箭头 */
+function ArrowDownBtn(): JSX.Element {
+  return (
+    <span className={styles.arrowDownBtnWrapper}>
+      <svg
+        className={styles.arrowDownBtn}
+        aria-hidden="true"
+        viewBox="-75.52 -43.52 599.04 599.04"
+        fill="currentColor"
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight+40,
+            behavior: "smooth"
+          })
+        }}>
+        <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+      </svg>
+    </span>
+  )
+}
+
+
 function Hero() {
   const trails = useTrail(4, {
-    from: { opacity: 0, transform: 'translate3d(0px, 2em, 0px)' },
+    // 首页文字过度动作
+    from: { opacity: 0, transform: 'translate3d(100px, 5em, 0px)' },
     to: { opacity: 1, transform: 'translate3d(0px, 0px, 0px)' },
     config: {
-      mass: 3,
-      tension: 460,
-      friction: 45,
+      mass: 3.5,
+      tension: 150,
+      friction: 20,
     },
   });
-
+  const {siteConfig} = useDocusaurusContext();
   return (
     <animated.div className={styles.hero}>
       <div className={styles.bloghome__intro}>
         <animated.div style={trails[0]} className={styles.hero_text}>
-          <Translate id="homepage.hero.greet">你好! 我是</Translate>
+          <Translate id="homepage.hero.greet">加减 の </Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">愧怍</Translate>
+            <Translate id="homepage.hero.name">Tiny Home</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
+            {`世界继续热闹，愿你不变模样，勇敢且自由 😉`}
           </Translate>
-          <br />
-          <br />
-          <Translate
+        <br />
+        <br />
+
+      <div className={styles['header-content-inner']}>
+        <div className={clsx('hero__title', styles['header-title'])}>
+          <p>
+            {`Shake's ~`}
+          </p>
+       </div>
+         <div className={styles['header-right']}>
+           <div className={clsx('hero__subtitle', styles['header-describe'])}>
+             <p>
+              <em>{`BLOG`}</em>
+             </p>
+           </div>
+         </div>
+      </div>
+          {/* <Translate
             id="homepage.hero.look"
             values={{
               note: (
@@ -64,19 +105,28 @@ function Hero() {
             }}
           >
             {`你可以随处逛逛，查看{note}、{project}、{link}、以及我的{idea}。`}
-          </Translate>
-        </animated.p>
-        <SocialLinks style={trails[2]} />
-        <animated.div style={trails[3]}>
-          <a className={styles.intro} href={'./about'}>
-            <Translate id="hompage.hero.introduce">自我介绍</Translate>
-          </a>
-        </animated.div>
-      </div>
-      <div className={styles.bloghome__image}>
-        <HeroMain />
-      </div>
-    </animated.div>
+          </Translate> */}
+          </animated.p>
+
+          {/* 社交图标 */}
+          {/* <SocialLinks style={trails[2]} /> */}
+          <animated.div style={trails[3]}>
+            {/* about me */}
+            <a className={styles.intro} href={'./about'}>
+              <Translate id="hompage.hero.introduce">About Me</Translate>
+            </a>
+
+            <main>
+              <HomepageInfo />
+            </main>
+
+          </animated.div>
+        </div>
+        <div className={styles.bloghome__image}>
+          <HeroMain />
+          <ArrowDownBtn />
+        </div>
+      </animated.div>
   );
 }
 
@@ -85,34 +135,45 @@ export function SocialLinks({ ...prop }) {
   const { themeConfig } = siteConfig;
   const socials = themeConfig.socials as {
     github: string;
-    twitter: string;
-    juejin: string;
-    csdn: string;
+    // twitter: string;
+    // juejin: string;
+    // csdn: string;
     qq: string;
-    wx: string;
-    cloudmusic: string;
-    zhihu: string;
+    wechat: string;
+    // cloudmusic: string;
+    // zhihu: string;
   };
 
   return (
     <animated.div className={styles.social__links} {...prop}>
-      <a href="/rss.xml" target="_blank">
-        <Icon icon='ri:rss-line' />
-      </a>
       <a href={socials.github} target="_blank">
         <Icon icon='ri:github-line' />
       </a>
-      <a href={socials.juejin} target="_blank">
-        <JuejinIcon />
-      </a>
-      <a href={socials.qq} target="_blank">
+      {/* <a href={socials.qq} target="_blank">
         <Icon icon='ri:qq-line' />
+      </a> */}
+      {/* <a href={socials.wechat} target="_blank">
+        <Icon icon='ri:wechat-line' />
+      </a> */}
+      <a className="dropdown dropdown--hoverable">
+        <a href={socials.qq} target="_blank">
+          <Icon icon='ri:qq-line'  />
+        </a>
+        <img
+          width="50%"
+          className="dropdown__menu"
+          src='../img/qq.jpg'//'https://z3.ax1x.com/2021/05/16/g2S51s.jpg'//{useBaseUrl("/img/publicQR.webp")}
+        />
       </a>
-      <a href={socials.twitter} target="_blank">
-        <Icon icon='ri:twitter-line' />
-      </a>
-      <a href={socials.zhihu} target="_blank">
-        <Icon icon='ri:zhihu-line' />
+      <a className="dropdown dropdown--hoverable">
+        <a href={socials.wechat} target="_blank">
+          <Icon icon='ri:wechat-line'/>
+        </a>
+        <img
+          width="50%"
+          className="dropdown__menu"
+          src='../img/wechat.jpg'//'https://z3.ax1x.com/2021/05/16/g2S51s.jpg'//{useBaseUrl("/img/publicQR.webp")}
+        />
       </a>
     </animated.div>
   );

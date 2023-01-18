@@ -1,8 +1,11 @@
+/* 友链&导航样式 */
+
 .sidebar {
   max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
   overflow-y: auto;
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 2rem);
+  margin-left: -3rem;
 }
 
 .sidebarItemTitle {
@@ -12,7 +15,7 @@
 }
 
 .sidebarItemList {
-  font-size: 0.9rem;
+  font-size: 1.12rem;
 }
 
 .sidebarItem {

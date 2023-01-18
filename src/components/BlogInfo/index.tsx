@@ -13,12 +13,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Fade } from "react-awesome-reveal";
 import { projects } from '@site/data/project';
+import { websiteData } from '@site/data/website';
 
 type Count = {
   blog: number;
   tag: number;
   doc: number;
   project: number;
+  website: number;
 };
 
 export function BlogUser({
@@ -54,6 +56,7 @@ export function BlogUser({
       tag: Object.keys(tagData).length ?? 0,
       doc: docData?.length ?? 0,
       project: projects?.length ?? 0,
+      website: websiteData.length ?? 0,
     };
   }
 
@@ -65,7 +68,7 @@ export function BlogUser({
         <img className="bloginfo__img" src={logoLink} alt="logo"></img>
       </Link>
       <div>
-        <Link className="bloginfo__name" href="about">
+        <Link className="bloginfo__name" href="/">
           {title}
         </Link>
       </div>
@@ -83,7 +86,7 @@ export function BlogUser({
           <Icon icon="carbon:notebook" width="20" height="20" />
           {count.doc}
         </Link>
-        <Link className="bloginfo__num-item" href="/project" data-tips="project count">
+        <Link className="bloginfo__num-item" href="/project" data-tips="website count">
           <Icon icon="ph:projector-screen" width="20" height="20" />
           {count.project}
         </Link>
@@ -135,6 +138,7 @@ export default function BlogInfo() {
     tag: Object.keys(tagData).length ?? 0,
     doc: docData?.length ?? 0,
     project: projects?.length ?? 0,
+    website: websiteData.length ?? 0,
   };
 
   return (

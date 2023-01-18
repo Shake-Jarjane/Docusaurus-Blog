@@ -1,5 +1,7 @@
+/* 主题色 */
 :root {
-  --ifm-color-primary: #12affa;
+  // --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #72a1ed;
   --ifm-color-primary-dark: #05a1ec;
   --ifm-color-primary-darker: #0598df;
   --ifm-color-primary-darkest: #047eb8;
@@ -15,6 +17,7 @@
 
   --ifm-heading-font-family: var(var(--ifm-font-family-base))
   /* --content-font-family: "Raleway", "Kai", "楷体", "Kaiti", serif; */
+
 
   --ifm-navbar-shadow: 0 4px 28px rgb(0 0 0 / 10%);
   --ifm-toc-border-color: #f7f7f7;
@@ -43,9 +46,11 @@
   --tag-background-light: #1982bb;
 
   /* 代码块背景 */
-  --ifm-code-background: #12affa1a;
+  --ifm-code-background: #12affa1b;
   --ifm-code-color: var(--ifm-color-primary);
   --prism-background-color: #f6f8fa;
+  // --prism-background-color: #292d3e;
+
 
   --ifm-bg-color: #f5f5f5;
   --ifm-text-color: #333;
@@ -133,19 +138,19 @@ body {
 html, body {
   scroll-behavior: smooth;
 }
-
+/* 滑动条 */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 12px;
   height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
+  border-radius: 20px;
   background-color: var(--ifm-color-primary);
 }
 
 html[data-theme='dark'] ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
+  border-radius: 20px;
   background-color: var(--ifm-color-primary-dark);
 }
 
@@ -154,8 +159,12 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb {
   background-color: rgb(255 255 255 / 10%);
 }
 
+/* 代码块 */
 .theme-code-block {
-  --prism-background-color: #f6f8fa !important;
+  // --prism-background-color: #f6f8fa !important;
+  --prism-background-color: #1e1e1e !important;
+  // --prism-background-color: #292d3e !important;
+  font-size: large;
 }
 
 html[data-theme='dark'] .theme-code-block {
@@ -166,6 +175,7 @@ html[data-theme='dark'] .theme-code-block {
   font-size: 2.2em;
 }
 
+/* markdown文本字体 */
 .markdown {
   > h1 {
     font-size: 2.2em;
@@ -183,19 +193,8 @@ html[data-theme='dark'] .theme-code-block {
       background: var(--ifm-color-primary);
       color: transparent;
       content: '.';
-    }
-  }
+      border-radius: 10px;
 
-  > h3 {
-    font-size: 1.5em;
-
-    &::before {
-      margin-right: 0.3em;
-      width: 0.3em;
-      display: inline-block;
-      background: var(--ifm-color-primary);
-      color: transparent;
-      content: '.';
     }
   }
 
@@ -220,6 +219,11 @@ html[data-theme='dark'] .theme-code-block {
     &:hover {
       color: #db2828;
     }
+  }
+
+  p {
+    font-size: 1.1em;
+    font-weight: 500;
   }
 
   .markdown-body a:hover::before {
@@ -251,11 +255,13 @@ html[data-theme='dark'] .theme-code-block {
   }
 }
 
+/* 导航栏 */
 .navbar__link,
 .dropdown,
 .navbar__title,
 .menu {
-  font-weight: 400;
+  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 .bloghome__scroll-down {
@@ -300,7 +306,7 @@ html[data-theme='dark'] .theme-code-block {
 .blogtag__swith-view {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .bloghome__swith-view svg,
@@ -344,9 +350,10 @@ html[data-theme='dark'] .theme-code-block {
     transition: all 0.5s;
   }
 
+  /* Blog List */
   .post__list-title {
     color: inherit;
-    font-size: 1em;
+    font-size: 1.2em;
     text-decoration: none;
     transition: 0.6s;
     grid-area: title;
@@ -472,13 +479,15 @@ html[data-theme='dark'] .pagination-nav__link {
 /* 文档侧栏字体大小 */
 .menu__list-item > .menu__link[tabindex] {
   font-size: 0.875rem;
-  font-weight: normal;
-  letter-spacing: 1.2px;
+  font-weight: 800/* normal */;
+  letter-spacing: 0.8px;
   line-height: 1.8em;
 }
 
+/* 章节标题 */ 
 .blog__section-title{
   margin: 1em 0;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -677,7 +686,7 @@ code {
 .bloginfo__description {
   margin: 0.5rem auto;
   color: var(--ifm-secondary-text-color);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .bloginfo__num {
@@ -803,3 +812,22 @@ div[class^='announcementBar_'] {
 .transition {
   transition: all 0.3s ease;
 }
+
+.header-github-link:hover {
+  opacity: 0.65;
+}
+
+.header-github-link:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+html[data-theme='dark'] .header-github-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+

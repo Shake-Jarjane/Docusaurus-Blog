@@ -1,7 +1,7 @@
 {
-  "link.title.学习": {
+  "link.title.✒ Note": {
     "message": "Study",
-    "description": "The title of the footer links column with title=学习 in the footer"
+    "description": "The title of the footer links column with title=✒Note in the footer"
   },
   "link.title.社交媒体": {
     "message": "Social Media",

@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "愧怍",
+    "message": "🏡 Home",
     "description": "The title in the navbar"
   },
   "item.label.标签": {
@@ -11,9 +11,9 @@
     "message": "归档",
     "description": "Navbar item with label 归档"
   },
-  "item.label.学习": {
-    "message": "学习",
-    "description": "Navbar item with label 学习"
+  "item.label.✒ Note": {
+    "message": "✒ Note",
+    "description": "Navbar item with label ✒ Note"
   },
   "item.label.小工具": {
     "message": "小工具",

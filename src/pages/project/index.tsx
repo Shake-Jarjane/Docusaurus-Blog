@@ -13,14 +13,15 @@ import styles from './styles.module.css';
 
 const TITLE = translate({
   id: 'theme.project.title',
-  message: '项目展示',
+  // message: '项目展示',
+  message: 'Project'
 });
 const DESCRIPTION = translate({
   id: 'theme.project.description',
-  message: '以下项目均由本人开发，均可自由使用，部分开源。',
+  message: '',
 });
 
-const GITHUB_URL = 'https://github.com/kuizuo';
+const GITHUB_URL = 'https://github.com/Shake-Jarjane';
 
 type ProjectState = {
   scrollTopPosition: number;
@@ -51,11 +52,12 @@ function ShowcaseHeader() {
       <p>{DESCRIPTION}</p>
       <a
         className="button button--primary"
-        href={GITHUB_URL}
+        // href={GITHUB_URL}
         target="_blank"
         rel="noreferrer">
         <Translate id="showcase.header.button">
-          🥰 前往 Github 克隆项目
+          {/* 🥰 前往 Github 克隆项目 */}
+          {`🥰 随便看看`}
         </Translate>
       </a>
     </section>

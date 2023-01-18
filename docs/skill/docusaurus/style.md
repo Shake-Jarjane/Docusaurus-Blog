@@ -2,7 +2,11 @@
 id: docusaurus-style
 slug: /docusaurus-style
 title: 样式与页面
-authors: kuizuo
+date: 2023/01/12
+authors: Shake
+last_update:
+  date: 2023/04/12
+#   author: Shake
 ---
 
 ## [样式和布局](https://docusaurus.io/zh-CN/docs/styling-layout#styling-your-site-with-infima)

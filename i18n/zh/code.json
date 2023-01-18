@@ -12,12 +12,12 @@
     "message": "Hello! 我是",
     "description": "hero greet"
   },
-  "愧怍": {
-    "message": "愧怍",
+  "加减": {
+    "message": "加减",
     "description": "my name"
   },
   "homepage.hero.text": {
-    "message": "在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。",
+    "message": "世界继续热闹，愿你不变模样，勇敢且自由 😉",
     "description": "hero text"
   },
   "homepage.hero.look":{
@@ -53,7 +53,7 @@
     "description": "read full text"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
+    "message": "标签 🏷",
     "description": "The title of the tag list page"
   },
   "blogtagpage.title": {
@@ -117,15 +117,15 @@
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "较新的博文",
+    "message": "上一页",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "较旧的博文",
+    "message": "下一页",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} 分钟阅读",
+    "message": "📖 {readingTime}分钟 ⏳",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMoreLabel": {
@@ -157,10 +157,10 @@
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.title.recommend":{
-    "message": "推荐阅读"
+    "message": "🥱随便看看📌"
   },
   "theme.blog.title.new":{
-    "message": "最新博客"
+    "message": "⚡ 最新博客"
   },
   "theme.blog.tagTitle": {
     "message": "{nPosts} 含有标签「{tagName}」",
@@ -253,7 +253,7 @@
     "message": "由 {user} ",
     "description": "The words used to describe by who the page has been last updated"
   },
-  "theme.lastUpdated.lastUpdatedAtBy": {
+  "theme..lastUpdatedAtBy": {
     "message": "最后{byUser}{atDate}更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },

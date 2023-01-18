@@ -18,25 +18,25 @@
 }
 
 .blogPostInfoTags > a {
-  font-size: 0.8em;
+  font-size: 1.1em;
   padding: 1px 5px;
 }
 
 .blogPostAuthor {
   display: inline-block;
   margin: 0 2px;
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: inherit;
 }
 
 .blogPostAuthor:hover {
-  text-decoration: none;
+  text-decoration: line;
 }
 
 .blogPostDate,
 .blogPostReadTime {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .blogPostDetailsFull {
@@ -44,7 +44,7 @@
 }
 
 .divider {
-  background-color: #eaecef;
+  background-color: #887d7d;
   border: 0;
   height: var(--ifm-hr-height);
   margin: 0.25rem 0;

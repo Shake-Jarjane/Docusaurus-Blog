@@ -16,7 +16,7 @@ import { Icon } from '@iconify/react';
 export default function BlogTagsListPage({ tags, sidebar }: Props): JSX.Element {
   const title = translateTagsPageTitle();
 
-  const [type, setType] = useState<'list' | 'grid'>('list');
+  const [type, setType] = useState<'list' | 'grid'>('grid');
 
   return (
     <HtmlClassNameProvider
@@ -28,12 +28,14 @@ export default function BlogTagsListPage({ tags, sidebar }: Props): JSX.Element 
       <SearchMetadata tag="blog_tags_list" />
       <BlogLayout sidebar={sidebar}>
         <div className="blogtag__swith-view">
-          <h1>{title}</h1>
+          <h1>{title} &nbsp;</h1>
           <div>
-            <Icon icon='ph:list-fill' width="24" height="24" onClick={() => setType('list')}
-              color={type === 'list' ? 'var(--ifm-color-primary)' : '#ccc'} />
-            <Icon icon='ph:grid-four' width="24" height="24" onClick={() => setType('grid')}
+            <Icon icon='ph:grid-four' width="30" height="30" onClick={() => setType('grid')}
               color={type === 'grid' ? 'var(--ifm-color-primary)' : '#ccc'} />
+            &nbsp;
+            &nbsp;
+            <Icon icon='ph:list-fill' width="30" height="30" onClick={() => setType('list')}
+              color={type === 'list' ? 'var(--ifm-color-primary)' : '#ccc'} />
           </div>
         </div>
         {type === 'list' && <TagsListByLetter tags={tags} />}
