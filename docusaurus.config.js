@@ -199,9 +199,9 @@ const config = {
       maxHeadingLevel: 4,
     },
     algolia: {
-      appId: 'JVUKH1R0D6',
-      apiKey: 'de1342c020b16a3dcd45917e176ee7d2',
-      indexName: 'Docusaurus',
+      appId: 'HUN3GEQ3OZ',
+      apiKey: '0ef3c1157ca45bf16c97b628397016ee',
+      indexName: 'Shake',
     },
     zoom: {
       selector: '.markdown :not(em) > img',
