@@ -116,9 +116,9 @@ function Hero() {
               <Translate id="hompage.hero.introduce">About Me</Translate>
             </a> */}
 
-            <main>
+            <div>
               <HomepageInfo />
-            </main>
+            </div>
 
           </animated.div>
         </div>
