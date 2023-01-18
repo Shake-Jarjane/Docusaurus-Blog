@@ -1,6 +1,6 @@
 const { ALL } = require('dns')
 const path = require('path')
-const beian = '闽ICP备2020017848号-2'
+const beian = 'XICP备20200XXXX号-2'
 const license = 'CC BY-NC 4.0'
 
 const announcementBarContent = `Hi~ Welcome to my Blog 👋`
@@ -172,8 +172,8 @@ const config = {
         ],
         },
       ],
-      // copyright: `Copyright © 2022 - ${new Date().getFullYear()} By Shake. Built with Docusaurus.</> | <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a>  `,
-      // copyright: `Copyright © 2022 - ${new Date().getFullYear()} By Shake. Built with Docusaurus.</> | <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a> <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"></a></p> `,
+      copyright: `Copyright © 2022 - ${new Date().getFullYear()} By Shake. Built with Docusaurus.| <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a>`
+      // copyright: `Copyright © 2022-${new Date().getFullYear()}. <br>Built with Docusaurus.| <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a> <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"></a></p> `
     
     },
     prism: {
@@ -292,7 +292,7 @@ const config = {
           type: 'all',
           title: '加减',
           description: '',
-          copyright: `Copyright © ${new Date().getFullYear()} 加减 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          copyright: `Copyright © ${new Date().getFullYear()} Shake Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       }
     ],

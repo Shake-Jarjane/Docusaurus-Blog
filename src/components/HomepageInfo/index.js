@@ -59,8 +59,7 @@ function Info({title, img, img1, img_github, img_about, img_wechat, img_qq}) {
             <div className={styles['icons-top']}>
               <div className={styles['icon-t']}>
                 {/* <a href="https://space.bilibili.com/373512714" target="_blank"> */}
-                {/* <a href="/about" target="_blank"> */}
-                <a>
+                <a href="/about" target="_blank">
                   <img src={img_about} />
                 </a>
               </div>

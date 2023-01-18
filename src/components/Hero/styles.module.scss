@@ -165,7 +165,7 @@ html[data-theme='dark'] .bloghome__intro > p {
 .intro {
   display: inline-block;
   color: rgb(255, 255, 255);
-  padding: 0.5em 15px;
+  padding: 0.25em 10px;
   // margin-top: 1rem;
   margin-top: 0rem;
   margin-left: -2px;
@@ -173,7 +173,7 @@ html[data-theme='dark'] .bloghome__intro > p {
   font-weight: 600;
   background: linear-gradient( 90deg, var(--ifm-color-primary) 11.3%, var(--ifm-color-primary-light) 161.54% );
   box-shadow: rgb(112 196 233 ) 0 0 32px;
-  border-radius: 7px;
+  border-radius: 10px;
   font-family: "Yuanti SC", Youyuan, "You Yuan", "幼圆", "PingFang SC", "Microsoft Yahei", Helvetica, sans-serif;
 
   &:hover {
