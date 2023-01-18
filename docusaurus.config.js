@@ -9,7 +9,7 @@ const announcementBarContent = `Hi~ Welcome to my Blog 👋`
 const config = {
   title: 'Shake-Blog',
   titleDelimiter: '🦖',
-  url: 'https://Shake-Jarjane.github.io', // 网站的 url 地址
+  url: 'https://Shaking.site', // 网站的 url 地址
   baseUrl: '/',                           // 解析后的地址，如果设为 wsite，则 url 解析为https://xxx.xx/site
   projectName: 'Shake-Jarjane.github.io', // {username}.github.io
   organizationName: 'Shake-Jarjane',      // username
@@ -278,7 +278,8 @@ const config = {
         routeBasePath: '/',
         
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-        `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+        // `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+        `https://github.com/Shake-Jarjane/Docusaurus-Blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogSidebarTitle: 'Blog List 🛴',
         blogSidebarCount: ALL,

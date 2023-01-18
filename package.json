@@ -2,15 +2,15 @@
   "name": "blog",
   "version": "2.2.0",
   "author": {
-    "url": "https://github.com/kuizuo",
-    "email": "hi@kuizuo.cn",
-    "name": "Kuizuo"
+    "url": "https://github.com/Shake-jarjane",
+    "email": "2531535061@qq.com",
+    "name": "Shake"
   },
   "repository": {
-    "url": "https://github.com/kuizuo/blog",
+    "url": "https://github.com/Shake-Jarjane/Docusaurus-Blog",
     "type": "git"
   },
-  "homepage": "https://kuizuo.cn",
+  "homepage": "https://Shaking.site",
   "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",
