@@ -13,7 +13,7 @@
 
 ## 👋 Introduction
 
-本站基于<a href="https://kuizuo.cn">kuizuo</a>博主的源码进行修改，如果你喜欢这个主题，可直接 [Fork](https://github.com/kuizuo/blog/fork) 本仓库使用，或者通过 [StackBlitz](https://stackblitz.com/github/Shake-Jarjane/Docusaurus-Blog) 在线运行本项目，或通过 [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/Shake-Jarjane/Docusaurus-Blog/tree/main&project-name=blog&repo-name=blog) 一键部署。
+本站基于<a href="https://kuizuo.cn">kuizuo</a>博主的源码进行修改，主页的游戏机参考的是<a href="https://sinnammanyo.cn/">rcxxx</a>博主的。如果你喜欢这个主题，可直接 [Fork](https://github.com/kuizuo/blog/fork) 本仓库使用，或者通过 [StackBlitz](https://stackblitz.com/github/Shake-Jarjane/Docusaurus-Blog) 在线运行本项目，或通过 [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/Shake-Jarjane/Docusaurus-Blog/tree/main&project-name=blog&repo-name=blog) 一键部署。
 
 ## 📊 Catalogue
 
@@ -43,6 +43,8 @@
 ```
 
 ## 📥 Start
+
+安装好 Python 环境后再进行下一步
 
 ```sh
 git clone https://github.com/Shake-Jarjane/Docusaurus-Blog.git

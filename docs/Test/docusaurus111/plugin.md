@@ -2,7 +2,7 @@
 id: docusaurus111-plugin
 slug: /docusaurus111-plugin
 title: 插件
-authors: kuizuo
+authors: Shake
 ---
 
 在 `docusaurus.config.js` 下的 plugins，可以看到所有插件以及插件配置。

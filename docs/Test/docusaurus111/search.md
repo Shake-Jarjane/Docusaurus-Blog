@@ -2,7 +2,7 @@
 id: docusaurus111-search
 slug: /docusaurus111-search
 title: 搜索
-authors: kuizuo
+authors: Shake
 ---
 
 [搜索 | Docusaurus](https://docusaurus.io/zh-CN/docs/search)

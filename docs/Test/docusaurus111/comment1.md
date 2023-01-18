@@ -2,7 +2,7 @@
 id: docusaurus111-comment1
 slug: /docusaurus111-comment1
 title: 评论服务1111
-authors: kuizuo
+authors: Shake
 ---
 
 这里推荐两种评论服务

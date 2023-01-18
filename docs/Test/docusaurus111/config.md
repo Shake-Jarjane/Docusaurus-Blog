@@ -2,7 +2,7 @@
 id: docusaurus111-config
 slug: /docusaurus111-config
 title: 配置文件
-authors: kuizuo
+authors: Shake
 ---
 
 ## docusaurus.config.js

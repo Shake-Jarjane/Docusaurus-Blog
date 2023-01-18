@@ -2,7 +2,7 @@
 id: docusaurus111-guides
 slug: /docusaurus111-guides
 title: Docusaurus 主题魔改
-authors: kuizuo
+authors: Shake
 keywords: ['guides', 'docusaurus', 'docusaurus-guides']
 ---
 

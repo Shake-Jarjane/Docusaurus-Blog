@@ -2,7 +2,7 @@
 id: docusaurus111-deploy
 slug: /docusaurus111-deploy
 title: 部署
-authors: kuizuo
+authors: Shake
 ---
 
 我之前使用 [Vercel](https://vercel.com) 一把梭，无需任何配置，我只需要专注输出内容即可，这是我当时使用 Vercel 部署的文章 [Vercel部署个人博客](/vercel-deploy-blog)
