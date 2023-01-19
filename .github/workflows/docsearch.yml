@@ -4,7 +4,9 @@
 name: docsearch
 
 on:
-#  The way you choose
+  push:
+    branches:
+      - main
 
 jobs:
   algolia:
