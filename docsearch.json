@@ -1,6 +1,6 @@
 {
     "index_name": "Shake",
-    "start_urls": ["https://www.shaking.site/"],
+    "start_urls": ["https://www.shaking.site"],
     "sitemap_urls": ["https://www.shaking.site/sitemap.xml"],
     "selectors": {
       "lvl0": {
