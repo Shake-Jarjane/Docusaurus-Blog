@@ -202,6 +202,9 @@ const config = {
       appId: 'HUN3GEQ3OZ',
       apiKey: '0ef3c1157ca45bf16c97b628397016ee',
       indexName: 'Shake',
+      // appId: 'GV6YN1ODMO',
+      // apiKey: '50303937b0e4630bec4a20a14e3b7872',
+      // indexName: 'kuizuo',
     },
     zoom: {
       selector: '.markdown :not(em) > img',
@@ -218,10 +221,10 @@ const config = {
       jsLoader: 'matomo.js',
     },
     giscus: {
-      repo: 'kuizuo/blog',
-      repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
+      repo: 'Shake-Jarjane/Docusaurus-Blog',
+      repoId: 'R_kgDOIyryJA',
       category: 'General',
-      categoryId: 'DIC_kwDOF7NJDM4CPK95',
+      categoryId: 'DIC_kwDOIyryJM4CTqoJ',
       mapping: 'title',
       lang: 'zh-CN',
     },
