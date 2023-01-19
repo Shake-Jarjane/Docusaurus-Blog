@@ -5,8 +5,7 @@ name: docsearch
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   algolia:
