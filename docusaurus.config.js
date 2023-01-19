@@ -214,12 +214,12 @@ const config = {
       },
       config: {}
     },
-    matomo: {
-      matomoUrl: 'https://matomo.kuizuo.cn/',
-      siteId: '1',
-      phpLoader: 'matomo.php',
-      jsLoader: 'matomo.js',
-    },
+    // matomo: {
+    //   matomoUrl: 'https://matomo.kuizuo.cn/',
+    //   siteId: '1',
+    //   phpLoader: 'matomo.php',
+    //   jsLoader: 'matomo.js',
+    // },
     giscus: {
       repo: 'Shake-Jarjane/Docusaurus-Blog',
       repoId: 'R_kgDOIyryJA',
@@ -270,7 +270,7 @@ const config = {
   ],
   // themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
-    'docusaurus-plugin-matomo',
+    // 'docusaurus-plugin-matomo',
     'docusaurus-plugin-image-zoom',
     'docusaurus-plugin-sass',
     path.resolve(__dirname, './src/plugin/plugin-baidu-tongji'),
