@@ -43,7 +43,7 @@ export default function DocItemLayout({children}: Props): JSX.Element {
   const docTOC = useDocTOC();
   const { frontMatter } = useDoc();
 
-  const { hide_comment: hideComment } = frontMatter;
+  // const { hide_comment: hideComment } = frontMatter;
 
   return (
     <div className="row">
