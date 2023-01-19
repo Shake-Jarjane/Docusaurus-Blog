@@ -59,7 +59,7 @@ export default function DocItemLayout({children}: Props): JSX.Element {
           </article>
           <DocItemPaginator />
         </div>
-        {/* {!hideComment && <Comment />} */}
+        {/* {!hideComment && <Comment />} */} 
         < Comment />
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
