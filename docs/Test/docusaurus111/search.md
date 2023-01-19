@@ -11,7 +11,7 @@ authors: Shake
 
 这里是 algolia 的提交代码触发主动爬取测试
 
-？？？咋就不行了呢
+咋就不行了呢
 
 有两种方式来配置algolia
 
