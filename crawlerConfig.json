@@ -1,5 +1,5 @@
 {
-    "index_name": "Shake", 
+    "index_name": "Docusaurus", 
     "start_urls": ["https://shaking.site/"], 
     "rateLimit": 8,
     "maxDepth": 10,
