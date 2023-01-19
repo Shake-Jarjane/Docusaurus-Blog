@@ -13,7 +13,7 @@ import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import type {Props} from '@theme/DocItem/Layout';
 
 import styles from './styles.module.css';
-import Comment from '../../../components/comment';
+import Comment_ from '../../../components/Comment';
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -59,8 +59,8 @@ export default function DocItemLayout({children}: Props): JSX.Element {
           </article>
           <DocItemPaginator />
         </div>
-        {/* {!hideComment && <Comment />}  */}
-        < Comment />
+        { <Comment_ />} 
+        {/* < Comment /> */}
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
     </div>
