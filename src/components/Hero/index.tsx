@@ -130,7 +130,8 @@ function Hero() {
 
           {/* 社交图标 */}
           {/* <SocialLinks style={trails[2]} /> */}
-          <animated.div style={trails[3]}>
+          {/* <animated.div style={trails[3]}> */}
+          <div>
             {/* about me */}
             {/* <a className={styles.intro} href={'./about'}>
               <Translate id="hompage.hero.introduce">About Me</Translate>
@@ -197,7 +198,8 @@ function Hero() {
               width="50%" className="dropdown__menu"src='../img/qq.jpg'
             />
           </a>
-          </animated.div>
+          {/* </animated.div> */}
+          </div>
         </div>
         <div className={styles.bloghome__image}>
           <ArrowDownBtn />
