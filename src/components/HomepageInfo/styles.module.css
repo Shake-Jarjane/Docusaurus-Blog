@@ -21,10 +21,11 @@
 
 .card .back {
     position: absolute;
-    top: 10;
-    left: 10;
-    width: 150%;
-    height: 140%;
+    margin-top: 10;
+    /* top: 10; */
+    margin-left: 10;
+    width: 115%;
+    height: 145%;
     /* overflow: hidden; */
 }
 .card .back::before {
@@ -55,8 +56,9 @@ html[data-theme='dark'] .card:hover .back::before {
     width: 50%;
     height: 80%;
     position: absolute;
-    left: 40%;
-    top: -60%;
+    left: 35%;
+    /* top: -60%; */
+    margin-top: -10%;
     transition: 0.4s;
     opacity: 0;
     visibility: hidden;
@@ -81,6 +83,8 @@ html[data-theme='dark'] .card:hover .back::before {
     width: 110%;
     height: 110%;
     left: 12.1%;
+
+    
     /* top: 0; */
     /* bottom: 50%; */
     display: flex;
