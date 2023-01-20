@@ -360,7 +360,7 @@ html[data-theme='dark'] .bloghome__intro > p {
 
 @media (min-width: 1024px) {
   .header-content-inner {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -702,8 +702,6 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 3rem;
-  margin-top: 4rem;
   border: none;
   border-radius: 16px;
   overflow: hidden;
