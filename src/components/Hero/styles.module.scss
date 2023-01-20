@@ -57,11 +57,17 @@ html[data-theme='dark'] .bloghome__intro > p {
   z-index: 5;
   align-items: center;
   justify-items: center;
+
+  min-width:100%;
+  max-width: 100%
 }
 
 .bloghome__image svg {
   width: 100%;
   height: auto;
+
+  min-width:100%;
+  max-width: 100%
 }
 
 :global(.hero_main_svg__js) g,
@@ -401,6 +407,9 @@ html[data-theme='dark'] .header-describe em {
 .arrowDownBtnWrapper svg {
   width: 3%;
   height: auto;
+
+  min-width:3%;
+  max-width: 3%
 }
 
 .arrowDownBtn {
