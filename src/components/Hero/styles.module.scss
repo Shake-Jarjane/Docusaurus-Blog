@@ -360,7 +360,7 @@ html[data-theme='dark'] .bloghome__intro > p {
 
 @media (min-width: 1024px) {
   .header-content-inner {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
   }
 
