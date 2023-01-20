@@ -144,7 +144,7 @@ function Hero() {
             </div>
             {/* 社交图标 */}
             {/* <SocialLinks style={trails[2]} /> */}
-            <br />
+            {/* <br /> */}
 
             <a href={socials.github} target="_blank">
               <button>
