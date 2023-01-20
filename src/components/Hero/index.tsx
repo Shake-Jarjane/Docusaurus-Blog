@@ -14,6 +14,9 @@ import styles from './styles.module.scss';
 
 import clsx from 'clsx';
 import HomepageInfo from '@site/src/components/HomepageInfo';
+import DayAndNight from '@site/src/components/DayAndNight';
+
+
 
 /* 桌面下滑箭头 */
 function ArrowDownBtn(): JSX.Element {
@@ -115,10 +118,15 @@ function Hero() {
             {/* <a className={styles.intro} href={'./about'}>
               <Translate id="hompage.hero.introduce">About Me</Translate>
             </a> */}
-
             <div>
-              <HomepageInfo />
+              {/* Game boy */}
+              {/* <HomepageInfo /> */}
+
+              {/* Day and Night */}
+              <DayAndNight />
             </div>
+            {/* 社交图标 */}
+          <SocialLinks style={trails[2]} />
 
           </animated.div>
         </div>

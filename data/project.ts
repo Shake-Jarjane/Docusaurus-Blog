@@ -1,10 +1,10 @@
 export const projects: Project[] = [
   {
-    title: '愧怍的小站',
+    title: 'Shake-Blog',
     description: '基于Docusaurus v2 静态网站生成器实现个人博客',
-    preview: '/img/project/blog.png',
-    website: 'https://kuizuo.cn',
-    source: 'https://github.com/kuizuo/blog',
+    preview: '/img/project/shake-blog.png',
+    website: 'https://shaking.site',
+    source: 'https://github.com/Shake-Jarjane/Docusaurus-Blog',
     tags: ['opensource', 'design', 'favorite'],
     type: 'web',
   },
