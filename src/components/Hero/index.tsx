@@ -123,8 +123,10 @@ function Hero() {
           </animated.div>
         </div>
         <div className={styles.bloghome__image}>
-          <HeroMain />
           <ArrowDownBtn />
+          <HeroMain />
+        </div>
+        <div>
         </div>
       </animated.div>
   );

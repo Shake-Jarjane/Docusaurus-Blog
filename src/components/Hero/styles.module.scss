@@ -391,6 +391,10 @@ html[data-theme='dark'] .header-describe em {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* 布局测试 */
+  min-width:100%;
+  max-width: 100%
   
 }
 

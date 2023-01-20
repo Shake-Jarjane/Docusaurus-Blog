@@ -7,6 +7,7 @@
     margin-bottom: 10%;
     min-width: 300px;
     min-height: 180px;
+
 }
 
 .info-container .card{
@@ -22,8 +23,8 @@
     position: absolute;
     top: 10;
     left: 10;
-    width: 160%;
-    height: 150%;
+    width: 150%;
+    height: 140%;
     /* overflow: hidden; */
 }
 .card .back::before {
