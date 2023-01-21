@@ -13,7 +13,7 @@ $moon: #f2eddf;
 	border-image: url(https://images.pexels.com/photos/131683/pexels-photo-131683.jpeg)
 		100 / 19px / 0px round;
 	width: 540px;
-	height: 300px;
+	height: 330px;
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden;
@@ -21,17 +21,11 @@ $moon: #f2eddf;
 }
 .mount-1 {
 	position: absolute;
-	top: 185px;
-
-	// height: 100%;
-	// width: 100%;
+	top: 215px;
 }
 .mount-2 {
 	position: absolute;
-	top: 180px;
-
-	// height: 90%;
-	// width: 90%;
+	top: 210px;
 }
 .rotate {
 	animation-name: rotation;

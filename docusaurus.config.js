@@ -17,7 +17,7 @@ const config = {
   onBrokenLinks: 'ignore',     // 编译遇到死链怎么处理
 
   favicon: 'img/head.jpg',
-  tagline: '🥱',
+  tagline: '世界继续热闹，愿你不变模样，勇敢且自由😃',
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
     image: 'img/head.jpg',
