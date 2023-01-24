@@ -1,6 +1,6 @@
 ---
-id: docusaurus-guides
-slug: /docusaurus-guides
+id: docusaurus-guides1
+slug: /docusaurus-guides1
 title: Docusaurus 主题魔改
 authors: kuizuo
 keywords: ['guides', 'docusaurus', 'docusaurus-guides']
@@ -12,6 +12,4 @@ keywords: ['guides', 'docusaurus', 'docusaurus-guides']
 
 也欢迎你使用本主题，如果你有任何问题，欢迎在 [GitHub Discussions](https://github.com/kuizuo/blog/discussions) 提出。
 
-import DocCardList from '@theme/DocCardList'; import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-<DocCardList items={useCurrentSidebarCategory().items}/>

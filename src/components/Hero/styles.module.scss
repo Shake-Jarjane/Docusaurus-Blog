@@ -672,26 +672,7 @@ html[data-theme='dark'] .card:hover .back::before {
   display: flex;
 }
 
-/* 首页底下的按钮 */ 
-// button {
-//   width: 20%;
-//   font-family: inherit;
-//   font-size: 10px;
-//   background: royalblue;
-//   color: white;
-//   padding: 0.7em 1em;
-//   padding-left: 1.1em;
-//   align-items: center;
-//   justify-content: space-between;
-//   position: relative;
-  
-//   border: none;
-//   border-radius: 16px;
-//   overflow: hidden;
-//   transition: all 0.2s;
-//   left: 10em;
-// }
-
+/* 首页新的社交图标 */ 
 button {
   font-family: inherit;
   font-size: 15px;
@@ -747,4 +728,6 @@ button:active {
     transform: translateY(-0.1em);
   }
 }
+
+
 

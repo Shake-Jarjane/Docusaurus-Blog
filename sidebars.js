@@ -1,24 +1,48 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  skill: [
-    'skill/introduction',
+  Blog_Building: [
+    'Blog_Building/introduction',
     {
-      label: 'Docusaurus 主题魔改',
+      label: 'Hexo',
+      type: 'category',
+      link: {
+        type: 'generated-index',
+      },
+      items: [
+
+      ],
+    },
+    {
+      label: 'Docusaurus',
       type: 'category',
       link: {
         type: 'doc',
-        id: 'skill/docusaurus/docusaurus-guides'
+        id: 'Blog_Building/Docusaurus/Docusaurus-guides'
       },
       items: [
-        'skill/docusaurus/docusaurus-config',
-        'skill/docusaurus/docusaurus-style',
-        'skill/docusaurus/docusaurus-component',
-        'skill/docusaurus/docusaurus-plugin',
-        'skill/docusaurus/docusaurus-search',
-        'skill/docusaurus/docusaurus-comment',
-        'skill/docusaurus/docusaurus-deploy',
+        'Blog_Building/Docusaurus/Docusaurus-环境配置',
       ],
     },
+  ],
+  skill: [
+    'skill/introduction',
+    // {
+    //   label: 'Docusaurus 主题魔改',
+    //   type: 'category',
+    //   link: {
+    //     type: 'doc',
+    //     id: 'skill/docusaurus/docusaurus-guides'
+    //   },
+    //   items: [
+    //     'skill/docusaurus/docusaurus-config',
+    //     'skill/docusaurus/docusaurus-style',
+    //     'skill/docusaurus/docusaurus-component',
+    //     'skill/docusaurus/docusaurus-plugin',
+    //     'skill/docusaurus/docusaurus-search',
+    //     'skill/docusaurus/docusaurus-comment',
+    //     'skill/docusaurus/docusaurus-deploy',
+    //   ],
+    // },
   ],
   tools: [
     'tools/introduction',

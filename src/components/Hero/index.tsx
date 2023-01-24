@@ -183,7 +183,7 @@ function Hero() {
                     </button>
                   </a><img width="50%" className="dropdown__menu"src='../img/qq.jpg'/>
                 </a>
-              </div><br/><br/>
+              </div><br/>
 
             <div>
               {/* <HomepageInfo /> */}

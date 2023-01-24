@@ -9,12 +9,12 @@ const announcementBarContent = `Hi~ Welcome to my Blog 👋`
 const config = {
   title: 'Shake-Blog',
   titleDelimiter: '🦖',
-  url: 'https://Shaking.site', // 网站的 url 地址
+  url: 'https://Shaking.site',            // 网站的 url 地址
   baseUrl: '/',                           // 解析后的地址，如果设为 wsite，则 url 解析为https://xxx.xx/site
   projectName: 'Shake-Jarjane.github.io', // {username}.github.io
   organizationName: 'Shake-Jarjane',      // username
-  deploymentBranch: 'main',             // 部署的默认分支,如果部署到同一个仓库下则可不指定
-  onBrokenLinks: 'ignore',     // 编译遇到死链怎么处理
+  deploymentBranch: 'main',               // 部署的默认分支,如果部署到同一个仓库下则可不指定
+  onBrokenLinks: 'ignore',                // 编译遇到死链怎么处理
 
   favicon: 'img/head.jpg',
   tagline: '世界继续热闹，愿你不变模样，勇敢且自由😃',
@@ -60,16 +60,16 @@ const config = {
           position: 'left',
           items: [
             {
-              label: '笔记',
-              to: 'docs/skill/',
+              label: 'Blog Building', to: 'docs/Blog_Building/',
             },
             {
-              label: '工具推荐',
-              to: 'docs/tools/',
+              label: '笔记', to: 'docs/skill/',
             },
             {
-              label: 'Test',
-              to: 'docs/Test',
+              label: '工具推荐', to: 'docs/tools/',
+            },
+            {
+              label: 'Test', to: 'docs/Test',
             }
           ],
         },
@@ -79,24 +79,20 @@ const config = {
           to: '/',
           items: [
             {
-              label: '🏷 博文&分类',
-              to: 'tags',
+              label: '🏷 博文&分类', to: 'tags',
             },
             {
-              label: '⏰ 时间轴',
-              to: 'archive',
+              label: '⏰ 时间轴', to: 'archive',
             },
           ],
         },
         {
-          label: '🔗 友链&导航',
+          label: '🔗 友链&导航', to: 'website',
           position: 'right',
-          to: 'website',
         },
         {
-          href: 'https://github.com/Shake-Jarjane',
+          href: 'https://github.com/Shake-Jarjane', className: 'header-github-link',
           position: 'right',
-          className: 'header-github-link',
         },
         // 注释就是去掉导航栏的语言下拉选择栏
         //  {
@@ -199,9 +195,6 @@ const config = {
       maxHeadingLevel: 4,
     },
     algolia: {
-      // appId: 'GV6YN1ODMO',
-      // apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      // indexName: 'kuizuo',
       appId: 'HUN3GEQ3OZ',
       apiKey: '0ef3c1157ca45bf16c97b628397016ee',
       indexName: 'Shake',
