@@ -6,7 +6,7 @@ module.exports = function (context, options) {
         headTags: [
           {
             tagName: 'script',
-            innerHTML: `
+            innerHTML: 
             (function(){
               var bp = document.createElement('script');
               var curProtocol = window.location.protocol.split(':')[0];
@@ -19,8 +19,7 @@ module.exports = function (context, options) {
               bp.defer = true;
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(bp, s);
-          })();
-          `,
+          })(),
           },
         ],
       };
