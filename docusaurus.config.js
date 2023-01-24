@@ -76,7 +76,7 @@ const config = {
         {
           label: '🗺 Blog',
           position: 'left',
-          to: '/',
+          to: '/Hello-Blog',
           items: [
             {
               label: '🏷 博文&分类', to: 'tags',
@@ -273,9 +273,9 @@ const config = {
         path: 'blog',
         routeBasePath: '/',
         
-        editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-        // `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
-        `https://github.com/Shake-Jarjane/Docusaurus-Blog/edit/main/${blogDirPath}/${blogPath}`,
+        /* 编辑此页 */
+        // editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
+        // `https://github.com/Shake-Jarjane/Docusaurus-Blog/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogSidebarTitle: 'Blog List 🛴',
         blogSidebarCount: ALL,
