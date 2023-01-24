@@ -19,7 +19,7 @@ module.exports = function (context, options) {
               bp.defer = true;
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(bp, s);
-          })(),
+          })(), 
           },
         ],
       };
