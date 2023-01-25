@@ -1765,6 +1765,16 @@
     "@docusaurus/utils-validation" "2.2.0"
     tslib "^2.4.0"
 
+"@docusaurus/plugin-google-gtag@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmmirror.com/@docusaurus/plugin-google-gtag/-/plugin-google-gtag-2.2.0.tgz#7b086d169ac5fe9a88aca10ab0fd2bf00c6c6b12"
+  integrity sha512-6SOgczP/dYdkqUMGTRqgxAS1eTp6MnJDAQMy8VCF1QKbWZmlkx4agHDexihqmYyCujTYHqDAhm1hV26EET54NQ==
+  dependencies:
+    "@docusaurus/core" "2.2.0"
+    "@docusaurus/types" "2.2.0"
+    "@docusaurus/utils-validation" "2.2.0"
+    tslib "^2.4.0"
+
 "@docusaurus/plugin-ideal-image@^2.2.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.2.0.tgz"
@@ -1920,31 +1930,9 @@
     react-live "2.2.3"
     tslib "^2.4.0"
 
-"@docusaurus/theme-search-algolia@2.2.0":
+"@docusaurus/theme-search-algolia@2.2.0", "@docusaurus/theme-search-algolia@^2.2.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.2.0.tgz"
-  integrity sha512-2h38B0tqlxgR2FZ9LpAkGrpDWVdXZ7vltfmTdX+4RsDs3A7khiNsmZB+x/x6sA4+G2V2CvrsPMlsYBy5X+cY1w==
-  dependencies:
-    "@docsearch/react" "^3.1.1"
-    "@docusaurus/core" "2.2.0"
-    "@docusaurus/logger" "2.2.0"
-    "@docusaurus/plugin-content-docs" "2.2.0"
-    "@docusaurus/theme-common" "2.2.0"
-    "@docusaurus/theme-translations" "2.2.0"
-    "@docusaurus/utils" "2.2.0"
-    "@docusaurus/utils-validation" "2.2.0"
-    algoliasearch "^4.13.1"
-    algoliasearch-helper "^3.10.0"
-    clsx "^1.2.1"
-    eta "^1.12.3"
-    fs-extra "^10.1.0"
-    lodash "^4.17.21"
-    tslib "^2.4.0"
-    utility-types "^3.10.0"
-
-"@docusaurus/theme-search-algolia@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmmirror.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.2.0.tgz#77fd9f7a600917e6024fe3ac7fb6cfdf2ce84737"
   integrity sha512-2h38B0tqlxgR2FZ9LpAkGrpDWVdXZ7vltfmTdX+4RsDs3A7khiNsmZB+x/x6sA4+G2V2CvrsPMlsYBy5X+cY1w==
   dependencies:
     "@docsearch/react" "^3.1.1"

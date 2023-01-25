@@ -19,10 +19,6 @@ const config = {
   favicon: 'img/head.jpg',
   tagline: '世界继续热闹，愿你不变模样，勇敢且自由😃',
 
-  scripts: [
-    {src: 'https://hm.baidu.com/hm.js?<id>',  async: true}
-  ],
-
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
     image: 'img/head.jpg',
@@ -259,7 +255,7 @@ const config = {
           priority: 0.5,
         },
         gtag: {
-          trackingID: "G-S4SD5NXWXF",
+          trackingID: "G-B8JY1WT9BS",
           anonymizeIP: true,
         },
         // debug: true,
