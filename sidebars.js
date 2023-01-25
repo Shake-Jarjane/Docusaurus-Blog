@@ -22,6 +22,9 @@ const sidebars = {
       items: [
         'Blog_Building/Docusaurus/Docusaurus-环境配置',
         'Blog_Building/Docusaurus/Docusaurus-部署',
+        'Blog_Building/Docusaurus/Docusaurus-搜索配置',
+        'Blog_Building/Docusaurus/Docusaurus-评论服务',
+        'Blog_Building/Docusaurus/Docusaurus-图床配置',
       ],
     },
   ],

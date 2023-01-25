@@ -150,7 +150,7 @@ function Hero() {
                         <span>{`Github`}</span>
                       </button>
                     </a>
-                  </a>
+                  </a>&nbsp;&nbsp;&nbsp;
 
                 <a className="dropdown dropdown--hoverable">
                   <a href={socials.wechat} target="_blank">
@@ -166,7 +166,7 @@ function Hero() {
                       <span>{`WeChat`}</span>
                     </button>
                   </a><img width="50%" className="dropdown__menu"src='../img/wechat.jpg'/>
-                </a>
+                </a>&nbsp;&nbsp;&nbsp;
 
                 <a className="dropdown dropdown--hoverable">
                   <a href={socials.qq} target="_blank">

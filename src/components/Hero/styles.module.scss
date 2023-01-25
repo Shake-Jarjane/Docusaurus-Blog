@@ -682,13 +682,16 @@ button {
   padding-left: 0.9em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
   border: none;
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.2s;
-  margin-right: 15px;
+  // transition: all 0.2s;
+  
+  // margin-right: 15px;
 }
+
 
 button span {
   display: block;
@@ -697,7 +700,7 @@ button span {
 }
 
 button svg {
-  display: block; 
+  display: inline-flex; 
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
@@ -707,12 +710,14 @@ button:hover .svg-wrapper {
 }
 
 button:hover svg {
-  transform: /* translateX(1.2em) */ rotate(45deg) scale(1.1); 
+  transform: /* translateX(1.2em) */ rotate(180deg) scale(1.2); 
 }
 
 button:hover span {
   // transform: translateX(5em);
-  transform: translateX(0.6em);
+  // transform: translateX(0.6em);
+  transform: translateY(-0.3em);
+
 }
 
 button:active {

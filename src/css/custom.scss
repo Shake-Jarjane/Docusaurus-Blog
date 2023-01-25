@@ -65,7 +65,9 @@
   --site-color-svg-icon-favorite: #e9669e;
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
   --site-color-feedback-background: #fff;
-  --docusaurus-highlighted-code-line-bg: rgb(200 200 200);
+  // --docusaurus-highlighted-code-line-bg: rgb(200 200 200);
+  --docusaurus-highlighted-code-line-bg: rgb(100 100 100);
+
 }
 
 html {
