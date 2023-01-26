@@ -29,7 +29,7 @@ export const websiteData: WebsiteCategory[] = [
     websites: friends,
   },
   {
-    name: '每周必刷🔥',
+    name: '推荐浏览🔥',
     websites: [
       {
         name: "稀土掘金",
@@ -173,7 +173,6 @@ export const websiteData: WebsiteCategory[] = [
         href: 'https://www.terminalgif.com',
         tags: [],
       },
-
       {
         name: 'AST Explorer',
         desc: '一个 Web 工具，用于探索由各种解析器生成的 AST 语法树',
@@ -207,6 +206,27 @@ export const websiteData: WebsiteCategory[] = [
         desc: 'API 文档、API 调试、API Mock、API 自动化测试',
         logo: '/img/website/apifox.png',
         href: 'https://www.apifox.cn/',
+        tags: ['工具'],
+      },
+      {
+        name: '迅捷PDF转换器',
+        desc: '在线电子书格式转换PDF',
+        logo: 'https://app.xunjiepdf.com/favicon.ico',
+        href: 'https://app.xunjiepdf.com/eb2pdf/?zhljj01/',
+        tags: ['工具'],
+      },
+      {
+        name: 'DeepL 翻译',
+        desc: '号称全世界最准的翻译',
+        logo: 'https://static.deepl.com/img/logo/DeepL_Logo_darkBlue_v2.svg',
+        href: 'https://www.deepl.com/translator/',
+        tags: ['工具'],
+      },
+      {
+        name: 'GeoGebra',
+        desc: '数学教学软件，一个计算器套件',
+        logo: 'https://www.geogebra.org/favicon.ico',
+        href: 'https://www.geogebra.org/',
         tags: ['工具'],
       },
     ],
@@ -922,6 +942,13 @@ export const websiteData: WebsiteCategory[] = [
         href: 'https://googlefonts.cn/',
         tags: ['字体'],
       },
+      {
+        name: 'Typing SVG',
+        desc: '一个动态生成的可自定义 SVG 打字效果',
+        logo: '/img/website/typing-svg.png',
+        href: 'https://readme-typing-svg.herokuapp.com/demo/',
+        tags: ['字体'],
+      },
     ],
   },
   {
@@ -1058,4 +1085,28 @@ export const websiteData: WebsiteCategory[] = [
       },
     ],
   },
+  {
+    name: '音乐',
+    websites: [
+      {
+        name: '音乐解锁',
+        desc: '移除已购音乐的加密保护',
+        logo: 'https://demo.unlock-music.dev/favicon.ico',
+        href: 'https://demo.unlock-music.dev/',
+        tags: ['音乐','工具'],
+      },
+    ]
+  },
+  {
+    name: '学术',
+    websites: [
+      {
+        name: '维普毕业论文管理系统',
+        desc: '',
+        logo: 'https://vgms.fanyu.com/favicon.ico',
+        href: 'https://vgms.fanyu.com/',
+        tags: ['学术'],
+      },
+    ]
+  }
 ];

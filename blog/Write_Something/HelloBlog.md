@@ -15,10 +15,13 @@ export const Highlight = ({children, color}) => ( <span style={{
     }}>{children}</span> );
 <br/>
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Noto+Sans&weight=600&size=22&pause=1000&color=000000&vCenter=true&width=435&lines=Hi+there~+Welcome+to+my+Blog)](https://git.io/typing-svg)
+
+其实很早之前就有想搭博客的想法，因为一直没有很空闲的时间，加上搭博客也是需要一定的门槛，或多或少的问题罢了，就一直搁置了，趁着最近有点时间，于是胡乱摸索了一下。
+
 博客算是基本搭好了，随便写写自己的想法吧~
 
 <!-- truncate -->
-<br/>
 
 ## 为什么要搭建个人博客? 🤔
 

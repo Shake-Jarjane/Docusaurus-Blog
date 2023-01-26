@@ -1,6 +1,6 @@
 ---
 id: introduction
-slug: /skill
+slug: /Stack
 title: None
 keywords:
   - 前端

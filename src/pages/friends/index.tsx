@@ -6,6 +6,8 @@ import {Friends, type Friend} from '@site/data/friend';
 
 import styles from './styles.module.css';
 
+import Comment from '@site/src/components/Comment';
+
 const TITLE = '友情链接';
 const DESCRIPTION = '申请友链请点击下方申请，熟人可直接找我~';
 const ADD_FRIEND_URL =
@@ -49,6 +51,7 @@ function FriendLink(): JSX.Element {
         <FriendHeader />
         <FriendCards />
       </main>
+      <Comment />
     </Layout>
   );
 }

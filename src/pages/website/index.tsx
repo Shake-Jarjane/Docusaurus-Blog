@@ -8,6 +8,8 @@ import BackToTopButton from '@theme/BackToTopButton';
 import { websiteData } from '@site/data/website';
 import styles from './website.module.css';
 
+import Comment from '@site/src/components/Comment';
+
 function CategoryNav() {
   const sidebar = {
     title: '',
@@ -61,6 +63,7 @@ function CategoryList() {
           </section>
         </div>
       ))}
+      <Comment />
     </div>
   );
 }

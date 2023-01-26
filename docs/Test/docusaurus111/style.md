@@ -80,10 +80,23 @@ values={[
 
 # 这是一个浏览器窗口
 
-
 </BrowserWindow>
+
+````diff
+module.exports = {
++  themeConfig: {
+-    algolia: {
+      appId: 'YOUR_APP_ID',          // Application ID
+      apiKey: 'YOUR_SEARCH_API_KEY', // Search-Only API Key
+      indexName: 'YOUR_INDEX_NAME'   // Index name
+    }
+  }
+};
+````
 
 <BVideo src="//player.bilibili.com/player.html?aid=379284479&bvid=BV17f4y1M7mq&cid=445379085&page=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"bsrc="https://www.bilibili.com/video/BV17f4y1M7mq/"/>
 
 跳到 [主页](#homepage)
+
+
 

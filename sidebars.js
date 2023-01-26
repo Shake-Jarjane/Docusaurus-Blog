@@ -23,13 +23,13 @@ const sidebars = {
         'Blog_Building/Docusaurus/Docusaurus-环境配置',
         'Blog_Building/Docusaurus/Docusaurus-部署',
         'Blog_Building/Docusaurus/Docusaurus-搜索配置',
-        'Blog_Building/Docusaurus/Docusaurus-评论服务',
+        'Blog_Building/Docusaurus/Docusaurus-评论系统',
         'Blog_Building/Docusaurus/Docusaurus-图床配置',
       ],
     },
   ],
-  skill: [
-    'skill/introduction',
+  Stack: [
+    'Stack/introduction',
     // {
     //   label: 'Docusaurus 主题魔改',
     //   type: 'category',
@@ -50,13 +50,13 @@ const sidebars = {
   ],
   tools: [
     'tools/introduction',
-    'tools/everything-quick-search-local-files',
-    'tools/wappalyzer-recognize-technology',
-    'tools/windows-custom-right-click-menu',
-    'tools/vscode-config',
-    'tools/idea-config',
-    'tools/vite-plugin',
-    'tools/jetbrains-product-activation-method',
+    // 'tools/everything-quick-search-local-files',
+    // 'tools/wappalyzer-recognize-technology',
+    // 'tools/windows-custom-right-click-menu',
+    // 'tools/vscode-config',
+    // 'tools/idea-config',
+    // 'tools/vite-plugin',
+    // 'tools/jetbrains-product-activation-method',
   ],
   Test: [
     'Test/introduction',

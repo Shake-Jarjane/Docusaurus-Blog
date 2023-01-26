@@ -42,12 +42,12 @@ function ArrowDownBtn(): JSX.Element {
 function Hero() {
   const trails = useTrail(4, {
     // 首页文字过度动作
-    from: { opacity: 0, transform: 'translate3d(100px, 5em, 0px)' },
+    from: { opacity: 0, transform: 'translate3d(0px, 5em, 50px)' },
     to: { opacity: 1, transform: 'translate3d(0px, 0px, 0px)' },
     config: {
       mass: 3.5,
-      tension: 150,
-      friction: 20,
+      tension: 300,
+      friction: 25,
     },
   });
 
@@ -147,6 +147,7 @@ function Hero() {
                             </svg>
                           </div>
                         </div>
+                        &nbsp;
                         <span>{`Github`}</span>
                       </button>
                     </a>
@@ -163,6 +164,7 @@ function Hero() {
                           </svg>
                         </div>
                       </div>
+                      &nbsp;
                       <span>{`WeChat`}</span>
                     </button>
                   </a><img width="50%" className="dropdown__menu"src='../img/wechat.jpg'/>
@@ -179,7 +181,9 @@ function Hero() {
                           </svg>
                         </div>
                       </div>
+                      &nbsp;
                       <span>{`QQ`}</span>
+                      &nbsp;
                     </button>
                   </a><img width="50%" className="dropdown__menu"src='../img/qq.jpg'/>
                 </a>

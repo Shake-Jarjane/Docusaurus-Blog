@@ -142,7 +142,7 @@ html, body {
 }
 /* 滑动条 */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 7px;
   height: 5px;
 }
 
@@ -227,6 +227,11 @@ html[data-theme='dark'] .theme-code-block {
     font-size: 1.1em;
     font-weight: 500;
   }
+
+  // code {
+  //   font-size: 1.0em;
+  //   font-weight: 1000;
+  // }
 
   .markdown-body a:hover::before {
     width: 100%;
