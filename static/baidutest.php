@@ -1,4 +1,3 @@
-<?php
 {php}
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ?"https://": "http://";
 $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -18,4 +17,3 @@ curl_setopt_array($ch, $options);
 $result = curl_exec($ch);
 echo "<script>console.log('当前百度推送$result;')</script>";
 {/php}
-?>
