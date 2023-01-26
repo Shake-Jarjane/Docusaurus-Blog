@@ -40,7 +40,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'OSS Insight',
         desc: 'Open Source Software Insight',
-        logo: '/img/website/ossinsight.png',
+        logo: 'https://vecta.io/nano',
         href: 'https://ossinsight.io/',
       },
       {
