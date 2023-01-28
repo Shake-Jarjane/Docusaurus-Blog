@@ -3,7 +3,7 @@ const path = require('path')
 const beian = 'XICP备20200XXXX号-2'
 const license = 'CC BY-NC 4.0'
 
-const announcementBarContent = `慢慢迁移ing~ 👋`
+const announcementBarContent = `慢慢迁移ing 👋`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
