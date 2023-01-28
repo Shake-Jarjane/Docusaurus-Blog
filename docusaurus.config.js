@@ -7,7 +7,7 @@ const announcementBarContent = `Hi~ Welcome to my Blog 👋`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Shake-Blog',
+  title: "Shake's Blog",
   titleDelimiter: '🦖',
   url: 'https://Shaking.site',            // 网站的 url 地址
   baseUrl: '/',                           // 解析后的地址，如果设为 wsite，则 url 解析为https://xxx.xx/site
@@ -61,13 +61,13 @@ const config = {
           position: 'left',
           items: [
             {
-              label: '🛠 Blog Building', to: 'docs/Blog_Building/',
+              label: '🛠 Blog Building', to: 'docs/Site/',
             },
             {
               label: '💻 Stack', to: 'docs/Stack/',
             },
             {
-              label: '🧰 工具推荐', to: 'docs/tools/',
+              label: '🧰 Tool', to: 'docs/tools/',
             },
             {
               label: 'Test', to: 'docs/Test',
@@ -75,7 +75,7 @@ const config = {
           ],
         },
         {
-          label: '🗺 Blog',
+          label: '🗃 Blog',
           position: 'left',
           to: '/Hello-Blog',
           items: [
@@ -237,6 +237,7 @@ const config = {
       respectPrefersColorScheme: true,
     }
   },
+  clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
   presets: [
     [
       '@docusaurus/preset-classic',

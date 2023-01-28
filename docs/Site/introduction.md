@@ -1,6 +1,6 @@
 ---
 id: introduction
-slug: /Blog_Building
+slug: /Site
 title: 记录 Blog 搭建的部分过程
 date: 2023/01/21
 last_update:

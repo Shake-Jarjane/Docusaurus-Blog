@@ -15,9 +15,13 @@ $moon: #f2eddf;
 	width: 540px;
 	height: 330px;
 	margin-right: auto;
-	margin-left: auto;
+	// margin-left: auto;
 	overflow: hidden;
 	position: relative;
+
+	// display: flex;
+	// justify-content: left;
+
 }
 .mount-1 {
 	position: absolute;
@@ -45,6 +49,9 @@ $moon: #f2eddf;
 	);
 	height: 600px;
 	width: 550px;
+
+	// width: 540px;
+	// height: 330px;
 }
 .rotation { // 旋转主体
 	-webkit-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);

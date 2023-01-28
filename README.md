@@ -56,7 +56,7 @@ yarn start
 Build
 
 ```sh
-yarn run build
+yarn build
 ```
 
 ## 📝License

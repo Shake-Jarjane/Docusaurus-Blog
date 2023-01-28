@@ -44,7 +44,6 @@
     "@docusaurus/theme-search-algolia": "^2.2.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.8.1",
-    "@giscus/react": "^2.0.6",
     "@popperjs/core": "^2.11.2",
     "@react-spring/web": "^9.5.5",
     "dayjs": "^1.10.7",
@@ -65,6 +64,7 @@
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^2.2.0",
     "@docusaurus/module-type-aliases": "^2.2.0",
+    "@giscus/react": "^2.2.6",
     "@iconify/react": "^4.0.0",
     "@tsconfig/docusaurus": "^1.0.5",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
@@ -72,6 +72,7 @@
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "mitt": "^3.0.0",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
