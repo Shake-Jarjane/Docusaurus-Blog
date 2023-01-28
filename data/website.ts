@@ -1046,7 +1046,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'Halo',
         desc: '一款现代化的开源博客/CMS系统，值得一试',
-        logo: 'https://halo.run/themes/run.halo.official2/assets/favicons/favicon-96x96.png',
+        logo: 'https://halo.run/logo',
         href: 'https://halo.run/',
         tags: ['前端', '站点'],
       },

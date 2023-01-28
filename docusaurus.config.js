@@ -3,7 +3,7 @@ const path = require('path')
 const beian = 'XICP备20200XXXX号-2'
 const license = 'CC BY-NC 4.0'
 
-const announcementBarContent = `Hi~ Welcome to my Blog 👋`
+const announcementBarContent = `慢慢迁移ing~ 👋`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -61,7 +61,7 @@ const config = {
           position: 'left',
           items: [
             {
-              label: '🛠 Blog Building', to: 'docs/Site/',
+              label: '🛠 Site', to: 'docs/Site/',
             },
             {
               label: '💻 Stack', to: 'docs/Stack/',
