@@ -247,6 +247,7 @@ const config = {
           path: 'docs',
           sidebarPath: 'sidebars.js',
           showLastUpdateTime: true,
+          // showLastUpdateAuthor: false,
         },
         blog: false,
         theme: {

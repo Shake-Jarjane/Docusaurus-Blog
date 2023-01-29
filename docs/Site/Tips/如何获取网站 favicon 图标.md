@@ -4,11 +4,11 @@ slug: /Docusaurus-获取网站 favicon 图标
 title: 获取网站 favicon 图标
 date: 2023/01/27
 authors: Shake
-last_update:
-  date: 2023/01/27
 ---
 
-## 1. 直接访问 favicon 地址获取
+## 1. 直接访问 favicon 地址获取 111
+
+111
 
 熟悉网站开发的很多人都知道（当然我不是），网站的 favicon 就是把一个名为 **favicon.ico**  图片文件上传到网站根目录，然后浏览器会自动识别其为网站的标签页图标。
 

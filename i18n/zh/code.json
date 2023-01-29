@@ -253,7 +253,7 @@
     "message": "由 {user} ",
     "description": "The words used to describe by who the page has been last updated"
   },
-  "theme..lastUpdatedAtBy": {
+  "theme.lastUpdated.lastUpdatedAtBy": {
     "message": "最后{byUser}{atDate}更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
