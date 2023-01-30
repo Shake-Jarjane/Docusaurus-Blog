@@ -6,7 +6,7 @@ authors: Shake
 tags: [随笔]
 keywords: [随笔]
 ---
-import LinkList from "@site/src/components/LinkList"
+<!-- import LinkList from "@site/src/components/LinkList" -->
 
 export const Highlight = ({children, color}) => ( <span style={{
     backgroundColor: color,
