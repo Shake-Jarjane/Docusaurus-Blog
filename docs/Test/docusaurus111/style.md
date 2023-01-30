@@ -68,7 +68,7 @@ values={[
 </details>
 </TabItem>
 <TabItem value="orange">This is an orange 🍊<br/>
-          阿巴阿巴阿巴爸爸爱爸爸
+          阿巴阿巴阿巴
 </TabItem>
 <TabItem value="banana">This is a banana 🍌<br/><br/><br/>ye~~</TabItem>
 </Tabs>
