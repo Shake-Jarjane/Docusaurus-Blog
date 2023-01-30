@@ -170,7 +170,7 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb {
 }
 
 html[data-theme='dark'] .theme-code-block {
-  --prism-background-color: #1e1e1e !important;
+  --prism-background-color: #2e303d !important;
 }
 
 .main-wrapper h1 {
@@ -233,6 +233,11 @@ html[data-theme='dark'] .theme-code-block {
   //   font-weight: 1000;
   // }
 
+  // td{
+  //   font-size: 5.1em;
+  //   font-weight: 500;
+  // }
+
   .markdown-body a:hover::before {
     width: 100%;
   }
@@ -240,7 +245,15 @@ html[data-theme='dark'] .theme-code-block {
   img {
     display: flex;
     margin: 0 auto;
+    box-shadow: 0px 0px 0px 3px #000000;
+    // border-radius: 10px;
+
   }
+
+}
+
+[data-theme="dark"] img {
+  box-shadow: 0px 0px 0px 3px rgb(97, 97, 97);
 }
 
 /* 首页背景 */

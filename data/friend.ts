@@ -5,6 +5,12 @@ export const Friends: Friend[] = [
     website: 'https://kuizuon.cn',
     avatar: require('./avatar/kuizuo.png'),
   },
+  {
+    title: '徐玺',
+    description: '',
+    website: 'https://www.roboxx.ltd',
+    avatar: require('./avatar/No_avatar.png'),
+  },
 ];
 
 export type Friend = {

@@ -21,8 +21,6 @@ import TabItem from '@theme/TabItem';
 import BrowserWindow from '@site/src/components/BrowserWindow';
 import BVideo from "@site/src/components/BVideo";
 
-
-
 ## [样式和布局](https://docusaurus.io/zh-CN/docs/styling-layout#styling-your-site-with-infima)
 
 Docusaurus 网站是一个 React 单页应用。 你可以像一般的 React 应用一样给网站提供样式，想 tailwindCSS 与 组件库都是支持的。不过引入这些会带来一定的体积，因此我常用的是全局样式与 CSS 模块。
@@ -94,9 +92,25 @@ module.exports = {
 };
 ````
 
+import HyperLink from "@site/src/components/HyperLink";
+
+- <HyperLink type="external" link="https://www.cordcloud.biz/">
+    CordCloud &nbsp;
+  </HyperLink>
+
+- <HyperLink type="external" link="https://cyoooo.co/">
+    KuLi &nbsp;
+  </HyperLink>
+  （从 2022/6/10 使用至 2022/7/20）
+
 <BVideo src="//player.bilibili.com/player.html?aid=379284479&bvid=BV17f4y1M7mq&cid=445379085&page=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"bsrc="https://www.bilibili.com/video/BV17f4y1M7mq/"/>
 
 跳到 [主页](#homepage)
 
+import Shortcut from "@site/src/components/Shortcut/index";
 
+<div>
+  <Shortcut>ctrl</Shortcut> + <Shortcut>C</Shortcut>
+</div>
 
+<iframe width="900" height="515" src="https://www.bilibili.com/video/BV1rg411x7Z8/?spm_id_from=333.1007.tianma.9-1-31.click&vd_source=e08c248aced8612d6c81f01b1dad03c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

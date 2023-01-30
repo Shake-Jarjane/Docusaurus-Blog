@@ -92,7 +92,7 @@ const config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/Shake-Jarjane', className: 'header-github-link',
+          href: 'https://github.com/Shake-Jarjane/Docusaurus-Blog', className: 'header-github-link',
           position: 'right',
         },
         // 注释就是去掉导航栏的语言下拉选择栏
@@ -247,7 +247,7 @@ const config = {
           path: 'docs',
           sidebarPath: 'sidebars.js',
           showLastUpdateTime: true,
-          // showLastUpdateAuthor: false,
+          showLastUpdateAuthor: false,
         },
         blog: false,
         theme: {
@@ -281,7 +281,7 @@ const config = {
         // editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
         // `https://github.com/Shake-Jarjane/Docusaurus-Blog/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
-        blogSidebarTitle: 'Blog List 🛴',
+        blogSidebarTitle: '所有文章 🛴',
         blogSidebarCount: ALL,
         /* 首页博文每页显示的文章数 */
         postsPerPage: 8,

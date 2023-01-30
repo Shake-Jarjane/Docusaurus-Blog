@@ -12,6 +12,8 @@
 .websiteCard:hover {
   box-shadow: 0 10px 20px -10px rgb(0 0 0 / 20%);
   transform: translateY(-5px);
+
+  background: #05a1ec;
 }
 
 html[data-theme='dark'] .websiteCard:hover {
@@ -38,6 +40,7 @@ html[data-theme='dark'] .websiteCard:hover {
 }
 
 .websiteCardTitle a {
+  color: rgb(0, 0, 0);
   text-decoration: none;
   background: linear-gradient(
       var(--ifm-color-primary),
@@ -66,4 +69,10 @@ html[data-theme='dark'] .websiteCard:hover {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  /* color: #c8c9cc; */
+  color: #615554;
+}
+
+.websiteCardDesc:hover {
+  color: #ffffff;
 }

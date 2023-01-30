@@ -8,7 +8,7 @@
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Blog List 🛴",
+    "message": "所有文章 🛴",
     "description": "The label for the left sidebar"
   }
 }

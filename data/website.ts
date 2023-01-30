@@ -877,7 +877,7 @@ export const websiteData: WebsiteCategory[] = [
     ],
   },
   {
-    name: '字体图标',
+    name: '文字&图标',
     websites: [
       {
         name: 'iconify',
@@ -929,6 +929,13 @@ export const websiteData: WebsiteCategory[] = [
         tags: ['图标', 'emoji'],
       },
       {
+        name: 'EmojiXD',
+        desc: 'Emoji百科全书',
+        logo: 'https://emojixd.com/favicon.ico',
+        href: 'https://emojixd.com/',
+        tags: ['图标', 'emoji'],
+      },
+      {
         name: '渐变色网站',
         desc: '数百万个自动生成的渐变的网站',
         logo: 'https://gradihunt.com/favicon.ico',
@@ -948,6 +955,27 @@ export const websiteData: WebsiteCategory[] = [
         logo: '/img/website/typing-svg.png',
         href: 'https://readme-typing-svg.herokuapp.com/demo/',
         tags: ['字体'],
+      },
+      {
+        name: 'Hitokoto - 一言',
+        desc: '随机分享一句话',
+        logo: 'https://hitokoto.cn/favicon.ico',
+        href: 'https://hitokoto.cn/',
+        tags: ['文字'],
+      },
+      {
+        name: '一句',
+        desc: '汇聚有料文字',
+        logo: 'http://yijuzhan.com/favicon.ico',
+        href: 'http://yijuzhan.com/',
+        tags: ['文字'],
+      },
+      {
+        name: '今日诗句',
+        desc: '每次返回一句诗词',
+        logo: 'https://www.jinrishici.com/img/icon-small.png',
+        href: 'https://www.jinrishici.com/',
+        tags: ['文字'],
       },
     ],
   },
