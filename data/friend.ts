@@ -9,7 +9,7 @@ export const Friends: Friend[] = [
     title: '徐玺',
     description: '',
     website: 'https://www.roboxx.ltd',
-    avatar: require('./avatar/No_avatar.png'),
+    avatar: require('./avatar/no_avatar.png'),
   },
 ];
 
