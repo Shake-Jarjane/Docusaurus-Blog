@@ -6,17 +6,14 @@ authors: Shake
 keywords: ['guides', 'docusaurus', 'docusaurus-guides']
 ---
 
-<!-- import FeatureIcon from "@site/src/components/FeatureIcon" -->
+<!-- import logo from "@site/static/img/favicon.png" -->
+<!-- import visual_studio_code from "@site/static/img/icons/visual_studio_code.png" -->
 
-import logo from "@site/static/img/favicon.png"
-
+import FeatureIcon from "@site/src/components/FeatureIcon"
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import visual_studio_code from "@site/static/img/icons/visual_studio_code.png"
+import LinkList from "@site/src/components/LinkList"
 
-<!-- import LinkList from "@site/src/components/LinkList" -->
-
-
-<!-- <FeatureIcon src={useBaseUrl("/img/icons/visual_studio_code.png")} title="Visual Studio Code" />
+<FeatureIcon src={useBaseUrl("/img/icons/visual_studio_code.png")} title="Visual Studio Code" />
 <LinkList
   data={[
     {
@@ -28,7 +25,7 @@ import visual_studio_code from "@site/static/img/icons/visual_studio_code.png"
       link: "/docs/test/docusaurus111/search",
     },
   ]}
-/> -->
+/>
 
 
 1111这里是本人对 [Docusaurus](https://docusaurus.io/) 的魔改指南，帮助使用者更好使用 Docusaurus。
