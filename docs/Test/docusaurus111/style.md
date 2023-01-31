@@ -92,7 +92,7 @@ module.exports = {
 };
 ````
 
-import HyperLink from "@site/src/components/HyperLink";
+<!-- import HyperLink from "@site/src/components/HyperLink"; -->
 
 - <HyperLink type="external" link="https://www.cordcloud.biz/">
     CordCloud &nbsp;
@@ -107,7 +107,7 @@ import HyperLink from "@site/src/components/HyperLink";
 
 跳到 [主页](#homepage)
 
-import Shortcut from "@site/src/components/Shortcut/index";
+<!-- import Shortcut from "@site/src/components/Shortcut/index"; -->
 
 <div>
   <Shortcut>ctrl</Shortcut> + <Shortcut>C</Shortcut>

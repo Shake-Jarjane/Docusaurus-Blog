@@ -6,7 +6,7 @@ authors: Shake
 keywords: ['guides', 'docusaurus', 'docusaurus-guides']
 ---
 
-import FeatureIcon from "@site/src/components/FeatureIcon"
+<!-- import FeatureIcon from "@site/src/components/FeatureIcon" -->
 
 import logo from "@site/static/img/favicon.png"
 
