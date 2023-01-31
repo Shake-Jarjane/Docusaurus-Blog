@@ -192,10 +192,17 @@ function Hero() {
               </a>
             </div><br/>
 
+            {/* <a /* href="https://github.com/Shake-Jarjane/Shake-Jarjane.github.io/actions?" * / target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/Shake-Jarjane/Docusaurus-Blog/deploy.yml?branch=main&style=for-the-badge" /></a> */}
+              
             <div>
               {/* <HomepageInfo /> */}
               <DayAndNight />
-            </div>
+            </div><br/>
+            <a /* href="https://github.com/Shake-Jarjane/Docusaurus-Blog/commits/main" */ target="_blank">
+              <img src="https://img.shields.io/github/last-commit/Shake-Jarjane/Docusaurus-Blog?color=blue&style=for-the-badge" />
+            </a>
+            <br/><br/>
+
             {/* <SocialLinks style={trails[2]} /> */} {/* 社交图标 */}
           {/* </animated.div> */}
         </div>
