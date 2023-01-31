@@ -59,14 +59,14 @@ export const Highlight = ({children, color}) => ( <span style={{
 很多东西都非常容易遗忘，但是有时候只需要一点细节，就能瞬间回想起。做笔记也有可能是在记录一些无人问津的东西，几个月甚至几年都用不到是有可能的，但不意味着做笔记收益就不大了，与其说是做笔记，我个人更倾向于是记录生活，因为你所接触到的就是你的生活组成。
 
 **<Highlight color="#007300">💬 部分踩坑记录放在了这里 👇</Highlight>**
-<LinkList
+<!-- <LinkList
   data={[
     {
       title: " Docusaurus ",
       link: "/docs/Docusaurus-guides",
     },
   ]}
-/>
+/> -->
 
 ## 参考&致谢
 
