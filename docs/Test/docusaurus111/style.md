@@ -20,6 +20,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import BrowserWindow from '@site/src/components/BrowserWindow';
 import BVideo from "@site/src/components/BVideo";
+import BookParagraph from '@site/src/components/BookParagraph';import Origin from '@site/src/components/BookParagraph/Origin';
 
 ## [样式和布局](https://docusaurus.io/zh-CN/docs/styling-layout#styling-your-site-with-infima)
 
@@ -113,4 +114,17 @@ import Shortcut from "@site/src/components/Shortcut/index";
   <Shortcut>ctrl</Shortcut> + <Shortcut>C</Shortcut>
 </div>
 
-<iframe width="900" height="515" src="https://www.bilibili.com/video/BV1rg411x7Z8/?spm_id_from=333.1007.tianma.9-1-31.click&vd_source=e08c248aced8612d6c81f01b1dad03c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="900" height="515" src="https://www.bilibili.com/video/BV1rg411x7Z8/?spm_id_from=333.1007.tianma.9-1-31.click&vd_source=e08c248aced8612d6c81f01b1dad03c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<BookParagraph section="四">
+
+&emsp;&emsp;到了冬天，那个圮坍了的白塔，又重新修好了。可是那个在月下唱歌，使翠翠在睡梦里为歌声把灵魂轻轻浮起的年青人，还不曾回到茶峒来。
+
+&emsp;&emsp;&emsp;……
+
+&emsp;&emsp;这个人也许永远不回来了，也许“明天”回来！
+
+<Origin book_name="《book》" author="author" />
+
+</BookParagraph>
+

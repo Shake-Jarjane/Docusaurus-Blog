@@ -10,10 +10,9 @@ function Origin({author, book_name}:Props): JSX.Element{
 return(
     <div className={styles.origin}>
         <div className={styles.content}>
-            <h4>摘录来自</h4>
-            <div className={styles.detail}>
-                {author} —— {book_name}
-            </div>
+            {/* <h4> */}
+                {`摘自`}&nbsp;&nbsp;{author} —— {book_name}
+            {/* </h4> */}
         </div>
     </div>
 );

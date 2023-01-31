@@ -3,13 +3,17 @@
   border-top-left-radius: var(--ifm-global-radius);
   border-top-right-radius: var(--ifm-global-radius);
   margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 0.5px #45ebeb;
 }
 
 .browserWindowHeader {
   align-items: center;
-  background: var(--ifm-color-emphasis-200);
+  /* background: var(--ifm-color-emphasis-200); */
+  background: #618da0;
   display: flex;
   padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .row:after {
@@ -34,9 +38,18 @@
   background-color: #fff;
   color: #666;
   padding: 5px 15px;
-  font: 400 13px Arial;
-  user-select: none;
+  font: 500 15px Arial;
+  user-select: text;
 }
+
+.browserWindowAddressBar a{
+  color: rgb(103, 86, 86);
+}
+
+.browserWindowAddressBar a:hover{
+  color: var(--ifm-color-primary-dark);
+}
+
 
 .dot {
   margin-right: 6px;

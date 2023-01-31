@@ -3,7 +3,7 @@
   border-top-left-radius: var(--ifm-global-radius);
   border-top-right-radius: var(--ifm-global-radius);
   box-shadow: var(--ifm-global-shadow-lw);
-  margin: 0.5rem 4rem 3rem 4rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 .paragraphTitle {
@@ -12,10 +12,10 @@
 
 .paragraphTitle h3{
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
 .paragrapBody {
-  padding: 0rem 4rem 1rem 4rem;
+  padding: 0rem 2rem 1rem 2rem;
 }
