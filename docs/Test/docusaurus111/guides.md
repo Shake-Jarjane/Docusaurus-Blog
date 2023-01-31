@@ -13,7 +13,7 @@ import logo from "@site/static/img/favicon.png"
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import visual_studio_code from "@site/static/img/icons/visual_studio_code.png"
 
-<!-- import LinkList from "@site/src/components/LinkList" -->
+import LinkList from "@site/src/components/LinkList"
 
 
 <FeatureIcon src={useBaseUrl("/img/icons/visual_studio_code.png")} title="Visual Studio Code" />
