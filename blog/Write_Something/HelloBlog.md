@@ -6,6 +6,7 @@ authors: Shake
 tags: [随笔]
 keywords: [随笔]
 ---
+
 import LinkList from "@site/src/components/LinkList"
 
 export const Highlight = ({children, color}) => ( <span style={{
@@ -61,7 +62,7 @@ export const Highlight = ({children, color}) => ( <span style={{
 <LinkList
   data={[
     {
-      title: "Docusaurus",
+      title: " Docusaurus ",
       link: "/docs/Docusaurus-guides",
     },
   ]}

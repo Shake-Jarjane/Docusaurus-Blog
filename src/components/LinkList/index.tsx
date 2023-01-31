@@ -5,7 +5,6 @@ import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import type LinkItemType from "@components/LinkItem";
 
-
 type LinkListProps = {
   data: [];
   wrapperClassName?: string;
