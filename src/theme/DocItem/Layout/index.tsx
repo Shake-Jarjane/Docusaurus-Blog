@@ -16,6 +16,7 @@ import styles from './styles.module.css';
 
 import Comment from '../../../components/Comment';
 
+
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -45,6 +46,8 @@ export default function DocItemLayout({children}: Props): JSX.Element {
 
   const { frontMatter } = useDoc();
   // const { hide_comment: hideComment } = frontMatter;
+
+  const title = useDoc().metadata.title
 
   return (
     <div className="row">

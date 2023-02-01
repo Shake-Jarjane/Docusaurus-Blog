@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+
 /* 主题色 */
 :root {
   // --ifm-color-primary: #2e8555;
@@ -266,7 +268,11 @@ html[data-theme='dark'] .theme-code-block {
 
 /* navbar */
 .navbar {
-  box-shadow: none;
+  box-shadow: 0 0 0.2rem #0000001a, 0 0.2rem 0.4rem #0003;
+  
+  // 毛玻璃效果
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.1);
 
   .navbar__title {
     margin-left: 12px;
@@ -856,3 +862,54 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 
+.table-of-contents__link--active {
+  filter: none !important;
+  color: var(--ifm-color-primary-dark) !important;
+}
+
+.table-of-contents__link {
+  filter: grayscale(100%);
+  padding: 0.3rem 0 0.3rem 1rem;
+  border-radius: 10px;
+  transition: filter 0.08s ease-in-out, background-color 0.08s ease-in-out;
+  margin-top: -0.5rem;
+  // transition: filter 0.2s ease-in-out, color 0.2s ease-in-out;
+  color:#4d4d4d;
+}
+
+.table-of-contents__link:hover {
+  filter: none;
+  background-color: var(--ifm-menu-color-background-active) !important;
+  color: var(--ifm-color-primary-darkest) !important;
+}
+
+.table-of-contents {
+  font-size: 0.85rem;
+  font-weight: 550;
+
+  // transition: filter 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  // a {
+  //   color:#c1defa;
+  // }
+}
+
+html[data-theme='dark'] .table-of-contents__link:hover{
+  background-color:  #2e303d !important;
+}
+
+// .table-of-contents:hover{
+// .table-of-contents__link {
+//     filter: none;
+//     color: #5d5d5d;
+//   }
+// }
+
+
+
+// .table-of-contents:hover {
+
+// }
+
+// .pagination-nav__label {
+//   font-size: 1rem;
+// }

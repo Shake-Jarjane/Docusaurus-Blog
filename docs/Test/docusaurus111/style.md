@@ -21,6 +21,7 @@ import TabItem from '@theme/TabItem';
 import BrowserWindow from '@site/src/components/BrowserWindow';
 import BVideo from "@site/src/components/BVideo";
 import BookParagraph from '@site/src/components/BookParagraph';import Origin from '@site/src/components/BookParagraph/Origin';
+import DisplayFlex from '@site/src/components/DisplayFlex'
 
 ## [样式和布局](https://docusaurus.io/zh-CN/docs/styling-layout#styling-your-site-with-infima)
 
@@ -128,3 +129,10 @@ import Shortcut from "@site/src/components/Shortcut/index";
 
 </BookParagraph>
 
+<DisplayFlex>
+
+![1](https://shake-picture.oss-cn-guangzhou.aliyuncs.com/Docusaurus/docs/Blog_Building/Docusaurus/20230125010816.png)
+
+![2](https://shake-picture.oss-cn-guangzhou.aliyuncs.com/Docusaurus/docs/Blog_Building/Docusaurus/20230125010903.png)
+
+</DisplayFlex>

@@ -5,6 +5,8 @@ title: 评论服务
 authors: Shake
 ---
 
+    [[样式与页面]]
+
 这里推荐两种评论服务
 
 Giscus：基于GitHub Discussions，对程序员相对友好，评论信息提示通过github邮箱发送。
