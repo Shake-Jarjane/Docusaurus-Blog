@@ -15,7 +15,7 @@ import type {Props} from '@theme/DocItem/Layout';
 import styles from './styles.module.css';
 
 import Comment from '../../../components/Comment';
-
+import Backlink from '@site/src/components/Backlink'
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -62,6 +62,7 @@ export default function DocItemLayout({children}: Props): JSX.Element {
             <DocItemFooter />
           </article>
           <DocItemPaginator />
+          {/* <Backlink documentTitle={title} /> */}
         </div>
         {/* { <Comment />} */}
       </div>
