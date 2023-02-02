@@ -1,19 +1,26 @@
 .browserWindow {
-  border: 3px solid var(--ifm-color-emphasis-200);
+  /* border: 3px solid var(--ifm-color-emphasis-200); */
   border-top-left-radius: var(--ifm-global-radius);
   border-top-right-radius: var(--ifm-global-radius);
   margin-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 0px 0px 0px 0.5px #45ebeb;
+  /* box-shadow: 0px 0px 0px 0.5px #45ebeb; */
+
 }
 
 .browserWindowHeader {
   align-items: center;
-  /* background: var(--ifm-color-emphasis-200); */
-  background: #618da0;
+  /* background: #618da0; */
   display: flex;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  
+	height: 40px;
+	padding: 0 8px;
+	box-sizing: border-box;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: linear-gradient(#504b45 0%, #3c3b37 100%);
 }
 
 .row:after {
@@ -32,24 +39,36 @@
 }
 
 .browserWindowAddressBar {
-  flex: 1 0;
+  /* flex: 1 0; */
   margin: 0 1rem 0 0.5rem;
-  border-radius: 12.5px;
-  background-color: #fff;
+  border-radius: 8px;
+  background-color: #7d7871;
   color: #666;
   padding: 5px 15px;
   font: 500 15px Arial;
   user-select: text;
+  overflow:hidden; /* 溢出隐藏 */
+	text-overflow: ellipsis; /* 溢出部分省略号显示 */
+	white-space: nowrap; /* 不换行 */
 }
 
 .browserWindowAddressBar a{
-  color: rgb(103, 86, 86);
+  color: #d5d0ce;
+  font-size: 16px;
+}
+
+
+/* [data-theme='dark'] .browserWindowAddressBar {
+  background-color: #1b1b1d;
+} */
+
+[data-theme='dark'] .browserWindowAddressBar a{
+  color: #cbccdc;
 }
 
 .browserWindowAddressBar a:hover{
-  color: var(--ifm-color-primary-dark);
+  color: var(--ifm-color-primary-light);
 }
-
 
 .dot {
   margin-right: 6px;
@@ -75,4 +94,48 @@
 
 .browserWindowBody {
   padding: 1rem;
+  background: rgba(56, 4, 40, 0.9);
+  color: #cbccdc;
+  border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
+
+.browserWindowBody h1,
+.browserWindowBody h2,
+.browserWindowBody h3,
+.browserWindowBody h4,
+.browserWindowBody h5,
+.browserWindowBody a,
+.browserWindowBody p{
+  color: #cbccdc;
+}
+
+.cursor {
+	display: block;
+	height: 18px;
+	width: 5px;
+	animation: curbl 1200ms linear infinite;
+}
+
+@keyframes curbl {
+
+	0% {
+		background: #ffffff;
+	}
+
+	49% {
+		background: #ffffff;
+	}
+
+	60% {
+		background: transparent;
+	}
+
+	99% {
+		background: transparent;
+	}
+
+	100% {
+		background: #ffffff;
+	}
+} 

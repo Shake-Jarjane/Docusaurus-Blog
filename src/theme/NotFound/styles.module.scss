@@ -119,6 +119,87 @@ $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
     }
 }
 
+/** 在移动设备上，缩小 padding */
+@media screen and (max-width: 996px){
+    .body{
+        overflow:hidden;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .not-found {
+          position: relative;
+          overflow: hidden;
+          margin:0vw 0vw;
+          height:80vh;
+          [class*="wave"] {
+              position: absolute;
+          }
+          div {
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+              left: 0;
+              @for $i from 1 through 7 {
+                  &.wave-#{$i} {
+                      background: url(http://res.cloudinary.com/andrewhani/image/upload/v1524501869/404/wave-#{$i}.svg);
+                  }
+              }
+            &.sky-bg{
+              background: url(http://res.cloudinary.com/andrewhani/image/upload/v1524821915/404/bg-1_gvybzk.svg);
+              height: 100%;
+            }
+              &[class*="wave"]:not(.wave-4) {
+                  height: calc(100% - 330px);
+              }
+              &.wave-4 {
+                  height: calc(100% - 350px);
+              }
+          }
+          .boat {
+              position: absolute;
+              top: -18em;
+              right: 15%;
+              width: 80px;
+              @include animation(boat 15s $in-out-cubic infinite);
+          }
+          .wave-lost {
+              position: absolute;
+              top: 35%;
+              left: 40%;
+              color: #fff;
+              font-size: 8rem !important;
+              @include animation(surf 2s);
+              span {
+                  float: left;
+                  @include animation(float 3s ease-in infinite);
+                  &:nth-child(2) {
+                      @include animation-delay(2.5s);
+                  }
+                  &:nth-child(3) {
+                      @include animation-delay(4.5s);
+                  }
+              }
+          }
+          .wave-island {
+              position: absolute;
+              top: 180px;
+              left: 5%;
+              padding: 10px;
+              width: 150px;
+          }
+          .wave-message {
+              position: absolute;
+              bottom: 0px;
+              // left: 35%;
+              // padding-right: 30%;
+              height: auto !important;
+              color: #fff;
+              font-size: 1.2rem;
+              text-align: center;
+              @include animation(wave-message 1s);
+          }
+      }
+}
+
 @include key-frame(boat) {
     0% {
         @include transform-origin(left);

@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './styles.module.css';
 
-function BrowserWindow({children, minHeight, url}) {
+function BrowserWindow({children, url}) {
   return (
-    <div className={styles.browserWindow} style={{minHeight}}>
+    <div className={styles.browserWindow}>
       <div className={styles.browserWindowHeader}>
         <div className={styles.buttons}>
           <span className={styles.dot} style={{background: '#f25f58'}} />
@@ -23,8 +23,10 @@ function BrowserWindow({children, minHeight, url}) {
           </div>
         </div>
       </div>
-
-      <div className={styles.browserWindowBody}>{children}</div>
+      <div className={styles.browserWindowBody}>
+        {children}
+      <span className={styles.cursor}></span>
+        </div>
     </div>
   );
 }

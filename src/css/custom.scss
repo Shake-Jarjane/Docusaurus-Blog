@@ -44,7 +44,7 @@
 
   /* 标签背景 */
   --tag-background: var(--ifm-color-primary);
-  --tag-background-dark: #0179fa77;
+  --tag-background-dark: #7390d2;
   --tag-background-light: #1982bb;
 
   /* 代码块背景 */
@@ -74,6 +74,7 @@
 
 html {
   --post-title-color: hsl(220deg 79% 58%);
+  // --post-title-color: #7390d2;
   --post-pub-date-color: #8c8c8c;
   --divider-color: #ebebeb;
   --post-shadow-color: rgb(220 220 220 / 30%);
@@ -95,7 +96,9 @@ html :is(h1, h2, h3, h4, h5, h6) {
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: hsl(214deg 100% 60%);
+  // --ifm-color-primary: hsl(214deg 100% 60%);
+  --ifm-color-primary: #7390d2;
+
   --ifm-color-primary-light: hsl(214deg 100% 75%);
   --post-title-color: rgb(255 255 255);
   --post-pub-date-color: var(--ifm-color-gray-100);
@@ -271,8 +274,9 @@ html[data-theme='dark'] .theme-code-block {
   box-shadow: 0 0 0.2rem #0000001a, 0 0.2rem 0.4rem #0003;
   
   // 毛玻璃效果
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 1;
 
   .navbar__title {
     margin-left: 12px;
@@ -280,6 +284,7 @@ html[data-theme='dark'] .theme-code-block {
     font-family: var(--ifm-font-family-name);
   }
 }
+
 
 /* 导航栏 */
 .navbar__link,
@@ -652,6 +657,8 @@ html[data-theme='dark'] .pagination-nav__link {
 
   .navbar-sidebar {
     display: block;
+    height: 100vh;
+    height: 100dvh;
   }
 }
 
@@ -678,7 +685,6 @@ code {
   // background-image: -moz-linear-gradient(45deg, rgb(173, 255, 225), rgb(255, 224, 204));
   // background-image: -webkit-linear-gradient(45deg, rgb(173, 255, 225), rgb(255, 224, 204));
   // background-image: linear-gradient(45deg, rgb(173, 255, 225), rgb(255, 224, 204));
-
   a {
     text-decoration: none;
   }
@@ -868,13 +874,17 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .table-of-contents__link {
-  filter: grayscale(100%);
+  // filter: grayscale(100%);
   padding: 0.3rem 0 0.3rem 1rem;
   border-radius: 10px;
   transition: filter 0.08s ease-in-out, background-color 0.08s ease-in-out;
   margin-top: -0.5rem;
   // transition: filter 0.2s ease-in-out, color 0.2s ease-in-out;
   color:#4d4d4d;
+}
+
+[data-theme='dark'] .table-of-contents__link{
+  color: #cbccdc;
 }
 
 .table-of-contents__link:hover {

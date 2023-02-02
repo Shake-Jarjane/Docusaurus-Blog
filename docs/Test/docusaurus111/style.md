@@ -22,7 +22,6 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import BrowserWindow from '@site/src/components/BrowserWindow';
 import BVideo from "@site/src/components/BVideo";
-import BookParagraph from '@site/src/components/BookParagraph';import Origin from '@site/src/components/BookParagraph/Origin';
 import DisplayFlex from '@site/src/components/DisplayFlex'
 
 ## [样式和布局](https://docusaurus.io/zh-CN/docs/styling-layout#styling-your-site-with-infima)
@@ -77,13 +76,6 @@ values={[
 <TabItem value="banana">This is a banana 🍌<br/><br/><br/>ye~~</TabItem>
 </Tabs>
 
-
-<BrowserWindow minHeight={240} url="http://localhost:3000">
-
-# 这是一个浏览器窗口 
-
-</BrowserWindow>
-
 ````diff
 module.exports = {
 +  themeConfig: {
@@ -119,18 +111,6 @@ import Shortcut from "@site/src/components/Shortcut/index";
 
 <!-- <iframe width="900" height="515" src="https://www.bilibili.com/video/BV1rg411x7Z8/?spm_id_from=333.1007.tianma.9-1-31.click&vd_source=e08c248aced8612d6c81f01b1dad03c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-<BookParagraph section="四">
-
-&emsp;&emsp;到了冬天，那个圮坍了的白塔，又重新修好了。可是那个在月下唱歌，使翠翠在睡梦里为歌声把灵魂轻轻浮起的年青人，还不曾回到茶峒来。
-
-&emsp;&emsp;&emsp;……
-
-&emsp;&emsp;这个人也许永远不回来了，也许“明天”回来！
-
-<Origin book_name="《book》" author="author" />
-
-</BookParagraph>
-
 <DisplayFlex>
 
 ![1](https://shake-picture.oss-cn-guangzhou.aliyuncs.com/Docusaurus/docs/Blog_Building/Docusaurus/20230125010816.png)
@@ -138,3 +118,59 @@ import Shortcut from "@site/src/components/Shortcut/index";
 ![2](https://shake-picture.oss-cn-guangzhou.aliyuncs.com/Docusaurus/docs/Blog_Building/Docusaurus/20230125010903.png)
 
 </DisplayFlex>
+
+
+import ReadingCard from '@site/src/components/ReadingCard'
+
+<ReadingCard book="进击的巨人 - MIKASA" date="2013-xx-xx">
+什么都无法舍弃的人，什么也无法改变<br/>
+什么都无法舍弃的人，什么也无法改变<br/>
+什么都无法舍弃的人，什么也无法改变<br/>
+什么都无法舍弃的人，什么也无法改变<br/>
+</ReadingCard>
+
+<BrowserWindow url="http://localhost:3000">
+
+# 这是一个浏览器窗口
+
+## 这是一个浏览器窗口
+
+### 这是一个浏览器窗口
+
+这是一个浏览器窗口 111 222 333 什么都无法舍弃的人，什么也无法改变 什么都无法舍弃的人，什么也无法改变 什么都无法舍弃的人，什么也无法改变 什么都无法舍弃的人，什么也无法改变 什么都无法舍弃的人，什么也无法改变什么都无法舍弃的人，什么也无法改变
+
+<Tabs
+defaultValue="apple"
+values={[
+    {label: 'Apple', value: 'apple'},
+    {label: 'Orange', value: 'orange'},
+    {label: 'Banana', value: 'banana'},
+]}>
+<TabItem value="apple">This is an apple 🍎
+  <details>
+    <summary>Toggle me!</summary>
+      <div>
+        <div>This is the detailed content</div>
+        <br/>
+          <details>
+            <summary>Nested toggle! Some surprise inside...</summary>
+            <div>😲😲😲😲😲</div>
+            <br/>
+              <details>
+                <summary>Testing...</summary>
+                  <div>🤨</div>
+              </details>
+          </details>
+      </div>
+  </details>
+</TabItem>
+
+<TabItem value="orange">This is an orange 🍊<br/>
+          阿巴阿巴阿巴
+</TabItem>
+
+<TabItem value="banana">This is a banana 🍌<br/><br/><br/>ye~~</TabItem>
+</Tabs>
+
+</BrowserWindow>
+
