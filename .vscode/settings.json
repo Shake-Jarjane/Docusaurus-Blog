@@ -10,5 +10,6 @@
     "scss",
     "sass"
   ],
-  "search.useIgnoreFiles": false
+  "search.useIgnoreFiles": false,
+  "search.useGlobalIgnoreFiles": false
 }

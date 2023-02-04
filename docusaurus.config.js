@@ -60,18 +60,10 @@ const config = {
           label: '✒ Notes',
           position: 'left',
           items: [
-            {
-              label: '🛠 Site', to: 'docs/Site/',
-            },
-            {
-              label: '💻 Stack', to: 'docs/Stack/',
-            },
-            {
-              label: '🧰 Tool', to: 'docs/tools/',
-            },
-            {
-              label: 'Test', to: 'docs/Test',
-            }
+            { label: '🛠 Site', to: 'docs/Site/',},
+            { label: '💻 Stack', to: 'docs/Stack/',},
+            { label: '🧰 Tool', to: 'docs/tools/',},
+            { label: 'Test', to: 'docs/Test',},
           ],
         },
         {
@@ -79,13 +71,19 @@ const config = {
           position: 'left',
           to: '/Hello-Blog',
           items: [
-            {
-              label: '🏷 博文&分类', to: 'tags',
-            },
-            {
-              label: '⏰ 时间轴', to: 'archive',
-            },
+            { label: '🏷 博文&分类', to: 'tags' ,},
+            { label: '⏰ 时间轴', to: 'archive' ,},
           ],
+        },
+        {
+          label: '📸 Life Style',
+          position: 'left',
+          to: '#',
+          items: [
+            { label: '🐺 Wild Wolf', to: 'docs/WildWolf' },
+            { label: '✨ 生活指南', to: 'docs/LifeGuide',},
+            { label: '🖥 效率指北', to: 'docs/EfficiencyGuide',},
+          ]
         },
         {
           label: '🔗 友链&导航', to: 'website',
@@ -94,6 +92,7 @@ const config = {
         {
           href: 'https://github.com/Shake-Jarjane/Docusaurus-Blog', className: 'header-github-link',
           position: 'right',
+          description:"本站源码",
         },
         // 注释就是去掉导航栏的语言下拉选择栏
         //  {

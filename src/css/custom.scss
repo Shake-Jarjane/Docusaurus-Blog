@@ -257,9 +257,11 @@ html[data-theme='dark'] .theme-code-block {
 
 }
 
-[data-theme="dark"] img {
-  box-shadow: 0px 0px 0px 3px rgb(97, 97, 97);
-}
+// [data-theme="dark"] .markdown {
+//   img{
+//     box-shadow: 0px 0px 0px 3px rgb(97, 97, 97);
+//   }
+// }
 
 /* 首页背景 */
 .container-wrapper {
@@ -478,25 +480,50 @@ html[data-theme='dark'] .post__tags {
   margin: 2em 0;
 
   .pagination-nav__link {
-    background: linear-gradient(
-      90deg,
-      var(--ifm-color-primary-light) 11.3%,
-      var(--ifm-color-primary) 161.54%
-    );
-    color: white;
+    // background: linear-gradient(
+    //   90deg,
+    //   var(--ifm-color-primary-light) 11.3%,
+    //   var(--ifm-color-primary) 161.54%
+    // );
+    color: var(--ifm-color-primary);
     border: none;
 
     .pagination-nav__sublabel {
-      color: white;
+      font-weight: 1000;
+      color: #615e5e;
+      transition: all 0.2s ease-in-out;
     }
+    border: 2px solid var(--ifm-color-primary);
+    transition: all 0.2s ease-in-out;
   }
 }
 
-html[data-theme='dark'] .pagination-nav__link {
-  background: var(--tag-background-dark);
-  box-shadow: 0 0 32px rgb(0 105 165 / 35%);
+.pagination-nav .pagination-nav__link:hover{
   color: white;
+  background: #05a1ec;
+  transition: all 0.2s ease-in-out;
+  .pagination-nav__sublabel{
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+
+html[data-theme='dark'] .pagination-nav__link {
+  // background: var(--tag-background-dark);
+  box-shadow: 0 0 32px rgb(0 105 165 / 35%);
+  color: #7390d2;
   border: none;
+}
+
+html[data-theme='dark'] .pagination-nav .pagination-nav__link:hover{
+  color: white;
+  background: var(--tag-background-dark);
+  transition: all 0.2s ease-in-out;
+  .pagination-nav__sublabel{
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 .pagination-nav__item--next > .pagination-nav__link {
@@ -507,12 +534,62 @@ html[data-theme='dark'] .pagination-nav__link {
   );
 }
 
+/** 在移动设备上，缩小 padding */
+@media screen and (max-width: 996px){
+  .pagination-nav {
+    margin: 2em 0;
+  
+    .pagination-nav__link {
+      background: linear-gradient(
+        90deg,
+        var(--ifm-color-primary-light) 11.3%,
+        var(--ifm-color-primary) 161.54%
+      );
+      color: white;
+      border: none;
+  
+      .pagination-nav__sublabel {
+        color: white;
+      }
+    }
+  }
+  
+  html[data-theme='dark'] .pagination-nav__link {
+    background: var(--tag-background-dark);
+    box-shadow: 0 0 32px rgb(0 105 165 / 35%);
+    color: white;
+    border: none;
+  }
+  
+  .pagination-nav__item--next > .pagination-nav__link {
+    background: linear-gradient(
+      90deg,
+      var(--ifm-color-primary) 11.3%,
+      var(--ifm-color-primary-light) 161.54%
+    );
+  }
+}
+
 /* 文档侧栏字体大小 */
 .menu__list-item > .menu__link[tabindex] {
   font-size: 0.875rem;
   font-weight: 800/* normal */;
   letter-spacing: 0.8px;
   line-height: 1.8em;
+}
+
+/* 侧边栏左侧线条 */
+.menu__list .menu__list {
+  border-bottom: 2px solid #ced9e3;
+  border-bottom-color: #ffffff00!important;
+  border-left: 2px solid #ced9e3;
+  border-radius: 0 0 0 10px;
+  margin-left: 1rem;
+}
+
+html[data-theme='dark'] .menu__list .menu__list{
+  border-bottom: 2px solid #615e5e;
+  border-left: 2px solid #615e5e;
 }
 
 /* 章节标题 */ 
@@ -871,6 +948,9 @@ html[data-theme='dark'] .header-github-link:before {
 .table-of-contents__link--active {
   filter: none !important;
   color: var(--ifm-color-primary-dark) !important;
+  opacity: .8;
+  transform: scale(1.02)!important;
+  transform-origin: left;
 }
 
 .table-of-contents__link {
@@ -881,6 +961,7 @@ html[data-theme='dark'] .header-github-link:before {
   margin-top: -0.5rem;
   // transition: filter 0.2s ease-in-out, color 0.2s ease-in-out;
   color:#4d4d4d;
+  transition: .25s!important;
 }
 
 [data-theme='dark'] .table-of-contents__link{

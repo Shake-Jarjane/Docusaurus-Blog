@@ -36,3 +36,7 @@
 .item a:hover {
   color: white;
 }
+
+[data-theme="dark"] .item:hover{
+  background-color: #7390d2;
+}

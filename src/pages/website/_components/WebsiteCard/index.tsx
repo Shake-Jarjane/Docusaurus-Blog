@@ -11,6 +11,7 @@ const WebsiteCard = memo(({ website }: { website: Website }) => (
     key={website.name}
     className={clsx(styles.websiteCard, 'padding-vert--sm padding-horiz--md')}
   >
+    <Link href={website.href} className={clsx(styles.websiteCardHeader)}>
     <img
       src={
         typeof website.logo === 'string'
@@ -23,9 +24,9 @@ const WebsiteCard = memo(({ website }: { website: Website }) => (
     <div className={styles.websiteCardBody}>
       <div className={clsx(styles.websiteCardHeader)}>
         <h4 className={styles.websiteCardTitle}>
-          <Link href={website.href} className={styles.websiteCardLink}>
+          {/* <Link href={website.href} className={styles.websiteCardLink}> */}
             {website.name}
-          </Link>
+          {/* </Link> */}
         </h4>
       </div>
       <Tooltip
@@ -37,6 +38,7 @@ const WebsiteCard = memo(({ website }: { website: Website }) => (
         <p className={styles.websiteCardDesc}>{website.desc}</p>
       </Tooltip>
     </div>
+    </Link>
   </li>
 ));
 

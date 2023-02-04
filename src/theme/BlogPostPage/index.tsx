@@ -29,7 +29,7 @@ function BlogPostPageContent({
   } = frontMatter;
   return (
     <BlogLayout
-      // 注释就是不显示文章列表
+      // 注释就是不显示博文列表
       // sidebar={sidebar}
       toc={
         !hideTableOfContents && toc.length > 0 ? (

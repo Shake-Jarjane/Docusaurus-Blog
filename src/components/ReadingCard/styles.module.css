@@ -61,8 +61,7 @@
   padding: 0rem 1rem 0.3rem 1rem;
 }
 
-[data-theme='dark'] 
-.card .card__content,
-.card .card__title {
+[data-theme='dark'] .card .card__content,
+[data-theme='dark'] .card .card__title {
   color: #cbccdc;
 }

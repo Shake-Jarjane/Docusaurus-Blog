@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .websiteCard:hover {
@@ -14,6 +14,34 @@
   transform: translateY(-5px);
 
   background: #05a1ec;
+
+  cursor: pointer;
+  box-shadow: none;
+}
+
+/* .websiteCard::before{
+  content: '';
+  width: 0;
+  height: 100%;
+  /* background: #3f72ff; * /
+  background: #05a1ec;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+      /* Or Top * /
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.websiteCard:hover::before {
+  width: 100%;
+} */
+
+
+
+.websiteCard:hover a{
+  /* transform: scale(1.1); */
+  transition: transform ease-out 0.2s;
 }
 
 html[data-theme='dark'] .websiteCard:hover {
@@ -37,6 +65,7 @@ html[data-theme='dark'] .websiteCard:hover {
 .websiteCardTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
+  font-size: 18px;
 }
 
 .websiteCardTitle a {
@@ -54,13 +83,18 @@ html[data-theme='dark'] .websiteCard:hover {
   background-size: 100% 1px;
 }
 
+[data-theme='dark'] .websiteCardTitle a{
+  color: #cbccdc;
+}
+
 .websiteCardBody {
   padding: 0.2rem 0 0 var(--ifm-card-horizontal-spacing);
 }
 
 .websiteCardDesc {
   cursor: pointer;
-  font-size: smaller;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.66;
   width: 100%;
   margin: 0;
@@ -70,9 +104,11 @@ html[data-theme='dark'] .websiteCard:hover {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   /* color: #c8c9cc; */
-  color: #615554;
+  color: #615e5e;
+  transition: transform ease-out 0.2s;
 }
 
-.websiteCardDesc:hover {
-  color: #ffffff;
+[data-theme='dark'] .websiteCardDesc{
+  color: #cbccdc;
 }
+

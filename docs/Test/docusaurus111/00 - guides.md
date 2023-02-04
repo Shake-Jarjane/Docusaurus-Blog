@@ -1,7 +1,7 @@
 ---
 id: docusaurus111-guides
 slug: /docusaurus111-guides
-title: Docusaurus 主题魔改
+title: README
 authors: Shake
 keywords: ['guides', 'docusaurus', 'docusaurus-guides']
 ---
