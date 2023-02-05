@@ -29,41 +29,6 @@ export const websiteData: WebsiteCategory[] = [
     websites: friends,
   },
   {
-    name: '推荐浏览🔥',
-    websites: [
-      {
-        name: "稀土掘金",
-        desc: "稀土掘金是一个技术博客平台，是程序员发布自己的技术文章、分享知识的地方",
-        logo: "/img/website/juejin.png",
-        href: "https://juejin.cn/",
-      },
-      {
-        name: 'OSS Insight',
-        desc: 'Open Source Software Insight',
-        logo: 'https://vecta.io/nano',
-        href: 'https://ossinsight.io/',
-      },
-      {
-        name: 'Javascript Weekly',
-        desc: 'A newsletter of JavaScript articles, news and cool projects',
-        logo: '/img/website/javascript.svg',
-        href: 'https://javascriptweekly.com/',
-      },
-      {
-        name: 'State of JavaScript',
-        desc: 'JavaScript 生态系统的年度开发人员调查',
-        logo: '/img/website/stateofjs.svg',
-        href: 'https://stateofjs.com',
-      },
-      {
-        name: '前端食堂',
-        desc: '周周尝鲜，人工筛选前端圈每周最新资讯。—— 由 童欧巴 创作',
-        logo: '/img/website/zhubai.png',
-        href: 'https://hungryturbo.zhubai.love/',
-      }
-    ],
-  },
-  {
     name: '站点🖥️',
     websites: [
       {
@@ -694,6 +659,41 @@ export const websiteData: WebsiteCategory[] = [
         href: 'https://sandpack.codesandbox.io/',
         tags: ['在线代码'],
       },
+    ],
+  },
+  {
+    name: '前端推荐',
+    websites: [
+      {
+        name: "稀土掘金",
+        desc: "稀土掘金是一个技术博客平台，是程序员发布自己的技术文章、分享知识的地方",
+        logo: "/img/website/juejin.png",
+        href: "https://juejin.cn/",
+      },
+      {
+        name: 'OSS Insight',
+        desc: 'Open Source Software Insight',
+        logo: 'https://vecta.io/nano',
+        href: 'https://ossinsight.io/',
+      },
+      {
+        name: 'Javascript Weekly',
+        desc: 'A newsletter of JavaScript articles, news and cool projects',
+        logo: '/img/website/javascript.svg',
+        href: 'https://javascriptweekly.com/',
+      },
+      {
+        name: 'State of JavaScript',
+        desc: 'JavaScript 生态系统的年度开发人员调查',
+        logo: '/img/website/stateofjs.svg',
+        href: 'https://stateofjs.com',
+      },
+      {
+        name: '前端食堂',
+        desc: '周周尝鲜，人工筛选前端圈每周最新资讯。—— 由 童欧巴 创作',
+        logo: '/img/website/zhubai.png',
+        href: 'https://hungryturbo.zhubai.love/',
+      }
     ],
   },
   {
