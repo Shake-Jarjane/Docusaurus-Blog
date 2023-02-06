@@ -1,6 +1,6 @@
 .displayFlex {
   display: flex;
-  overflow: scroll;
+  overflow: visible;
   column-gap: 1rem;
   margin: 0.5rem 0;
   -ms-overflow-style: none;

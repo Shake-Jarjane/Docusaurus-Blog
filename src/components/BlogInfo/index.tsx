@@ -91,14 +91,14 @@ export function BlogUser({
           {count.project}
         </Link>
       </div>
-      <SocialLinks
+      {/* <SocialLinks
         style={{
           maxWidth: '100%',
           padding: '0.5em 0',
           justifyContent: 'space-evenly',
           ...(isNavbar ? { borderBottom: '1px solid #eee' } : null),
         }}
-      />
+      /> */}
     </div>
   );
 }

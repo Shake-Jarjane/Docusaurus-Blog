@@ -69,7 +69,7 @@ const config = {
         {
           label: '🗃 Blog',
           position: 'left',
-          to: '/Hello-Blog',
+          // to: '/Hello-Blog',
           items: [
             { label: '🏷 博文&分类', to: 'tags' ,},
             { label: '⏰ 时间轴', to: 'archive' ,},
@@ -80,10 +80,10 @@ const config = {
           position: 'left',
           to: '#',
           items: [
-            { label: '🐺 Wild Wolf', to: 'docs/WildWolf' },
-            { label: '✨ 生活指南', to: 'docs/LifeGuide',},
-            { label: '🖥 效率指北', to: 'docs/EfficiencyGuide',},
-          ]
+            { label: '🐺 Wild Wolf', to: 'docs/WildWolf/',},
+            { label: '✨ 生活指南', to: 'docs/LifeGuide/',},
+            { label: '🖥 效率指北', to: 'docs/EfficiencyGuide/',},
+          ],
         },
         {
           label: '🔗 友链&导航', to: 'website',
