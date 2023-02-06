@@ -3,13 +3,13 @@
 
 name: docsearch
 
-# on:
-#   push:
-#     branches:
-#       - main
-
 on:
-  deployment
+  push:
+    branches:
+      - main
+
+# on:
+#   deployment
 
 jobs:
   algolia:
