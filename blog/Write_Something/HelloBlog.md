@@ -8,14 +8,7 @@ keywords: [随笔]
 ---
 
 import LinkList from "@site/src/components/LinkList"
-
-export const Highlight = ({children, color}) => ( <span style={{
-    backgroundColor: color,
-    borderRadius: '2px',
-    color: '#fff',
-    padding: '0.2rem',
-    }}>{children}</span> );
-<br/>
+import HighLight from "@site/src/components/HighLight"
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Noto+Sans&weight=600&duration=3000&pause=1500&color=000000&center=true&vCenter=true&lines=Hi+there~+Welcome+to+my+Blog+%F0%9F%91%8B)](https://git.io/typing-svg)
 
@@ -58,7 +51,8 @@ export const Highlight = ({children, color}) => ( <span style={{
 
 很多东西都非常容易遗忘，但是有时候只需要一点细节，就能瞬间回想起。做笔记也有可能是在记录一些无人问津的东西，几个月甚至几年都用不到是有可能的，但不意味着做笔记收益就不大了，与其说是做笔记，我个人更倾向于是记录生活，因为你所接触到的就是你的生活组成。
 
-**<Highlight color="#007300">💬 部分踩坑记录放在了这里 👇</Highlight>**
+**<HighLight>💬 部分踩坑记录放在了这里 👇</HighLight>**
+
 <LinkList
   data={[
     {
