@@ -63,7 +63,7 @@ function CategoryList() {
           </section>
         </div>
       ))}
-      <Comment />
+      {/* <Comment /> */}
     </div>
   );
 }

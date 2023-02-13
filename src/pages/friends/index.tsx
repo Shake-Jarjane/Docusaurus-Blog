@@ -51,7 +51,7 @@ function FriendLink(): JSX.Element {
         <FriendHeader />
         <FriendCards />
       </main>
-      <Comment />
+      {/* <Comment /> */}
     </Layout>
   );
 }
