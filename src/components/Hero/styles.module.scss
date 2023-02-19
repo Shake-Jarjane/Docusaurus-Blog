@@ -863,30 +863,6 @@ html[data-theme='dark'] .card:hover .back::before {
   }
 }
 
-.typing-demo {
-  width: 17ch;
-  animation: typing 1.5s steps(22), blink 1.2s infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  // font-family: monospace;
-  // font-size: 1em;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-  // from{box-shadow: inset -3px 0px 0px #888;}
-	//   to{box-shadow: inset -3px 0px 0px transparent;}
-}
-
 .btn {
   position: relative;
   display: flex;
@@ -903,11 +879,11 @@ html[data-theme='dark'] .card:hover .back::before {
   align-items: center;
 }
  
- .btn:hover {
+.btn:hover {
   transform: scale(1.1);
 }
  
- .btn span {
+.btn span {
   position: absolute;
   z-index: 99;
   width: 145px;
@@ -933,7 +909,7 @@ html[data-theme='dark'] .btn span{
   background-color: #2e303d;
 }
  
- .btn .container {
+.btn .container {
   display: flex;
   width: 150px;
   border-radius: 80px;
@@ -945,23 +921,23 @@ html[data-theme='dark'] .btn span{
   opacity: 0;
 }
  
- .btn .container svg:nth-of-type(1) {
+.btn .container svg:nth-of-type(1) {
   transition-delay: 0.2s;
 }
  
- .btn .container svg:nth-of-type(2) {
+.btn .container svg:nth-of-type(2) {
   transition-delay: 0.8s;
 }
  
- .container svg:nth-of-type(3) {
+.container svg:nth-of-type(3) {
   transition-delay: 0.5s;
 }
  
- .btn:hover span {
+.btn:hover span {
   opacity: 0;
   z-index:-1;
 }
  
- .btn:hover svg {
+.btn:hover svg {
   opacity: 1;
 }

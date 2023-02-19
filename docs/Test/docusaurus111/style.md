@@ -24,6 +24,9 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 import BVideo from "@site/src/components/BVideo";
 import DisplayFlex from '@site/src/components/DisplayFlex'
 
+import DocsCard from '@site/src/components/DocsCard';
+import DocsCards from '@site/src/components/DocsCards';
+
 ## [样式和布局](https://docusaurus.io/zh-CN/docs/styling-layout#styling-your-site-with-infima)
 
 Docusaurus 网站是一个 React 单页应用。 你可以像一般的 React 应用一样给网站提供样式，想 tailwindCSS 与 组件库都是支持的。不过引入这些会带来一定的体积，因此我常用的是全局样式与 CSS 模块。
@@ -177,3 +180,18 @@ values={[
 :::info 🙄
 12345 走路去吸喵
 :::
+
+<DocsCards>
+  <DocsCard header="Getting Started" href="your-first-app" icon="">
+    <p>Learn the fundamentals you need to know to start building amazing apps with Ionic Framework.</p>
+  </DocsCard>
+
+<DocsCard header="Navigation" href="navigation" icon="">
+  <p>Learn the basics of navigation inside your app with Ionic and Vue Router</p>
+</DocsCard>
+
+<DocsCard header="Lifecycle" href="lifecycle" icon="">
+  <p>Learn about using Ionic lifecycle events in class components and with hooks</p>
+</DocsCard>
+
+</DocsCards>

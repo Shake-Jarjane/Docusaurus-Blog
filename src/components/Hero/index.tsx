@@ -99,6 +99,7 @@ function Hero() {
       {/* <div className={styles['typing-demo']}> */}
         <p>{`这里是加减的 Blog 😉`}</p>
       {/* </div> */}
+      {/* <p> */}
       
           {/* <Translate
             id="homepage.hero.look"

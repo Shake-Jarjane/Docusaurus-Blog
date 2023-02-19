@@ -9,6 +9,7 @@ import { websiteData } from '@site/data/website';
 import styles from './website.module.css';
 
 import Comment from '@site/src/components/Comment';
+import style from '@site/src/pages/website/website.module.scss';
 
 function CategoryNav() {
   const sidebar = {
@@ -82,6 +83,10 @@ export default function Websites() {
               <CategoryNav />
             </aside>
             <main className="col col--11">
+              {/* <div className={style.typingslider}>
+                <p>Here's my favorites.</p>
+                <p>Feel free to browse through them.</p>
+              </div> */}
               <CategoryList />
               <BackToTopButton />
             </main>

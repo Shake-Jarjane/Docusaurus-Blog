@@ -1,7 +1,7 @@
 .websiteCard {
   background-color: var(--ifm-card-background-color);
   border-radius: 8px;
-  border: 1px solid rgb(204 204 204 / 50%);
+  border: 2px solid rgba(169, 191, 215, 0.5);
   height: 100%;
   display: flex;
   flex-direction: row;

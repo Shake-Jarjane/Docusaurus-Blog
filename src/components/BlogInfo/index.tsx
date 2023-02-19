@@ -72,7 +72,7 @@ export function BlogUser({
           {title}
         </Link>
       </div>
-      <div className="bloginfo__description">{tagline}</div>
+      <div className="bloginfo__description"><h5>{tagline}</h5></div>
       <div className="bloginfo__num">
         <Link className="bloginfo__num-item" href="/archive">
           <Icon icon="carbon:blog" width="20" height="20" />
@@ -152,8 +152,8 @@ export default function BlogInfo() {
           <div className="bloghome__posts-card margin-bottom--md">
             <div className="row bloginfo__card">
               <div style={{ display: 'inline-flex', alignItems: 'center' }}>
-                <Icon icon="ri:price-tag-3-line" width="30" height="30" />
-                <span className="margin-horiz--sm">标签</span>
+                <Icon icon="ri:price-tag-3-line" width="25" height="25" />
+                <span className="margin-horiz--sm"><strong>标签</strong></span>
               </div>
               <TagsSection data={Object.values(tagData)} />
             </div>

@@ -193,29 +193,29 @@ html[data-theme='dark'] .theme-code-block {
     border-bottom: 1px solid #338bff;
     margin-top: 1rem;
 
-    &::before {
-      margin-right: 0.3em;
-      width: 0.4em;
-      display: inline-block;
-      background: var(--ifm-color-primary);
-      color: transparent;
-      content: '.';
-      border-radius: 10px;
+    // &::before {
+    //   margin-right: 0.3em;
+    //   width: 0.4em;
+    //   display: inline-block;
+    //   background: var(--ifm-color-primary);
+    //   color: transparent;
+    //   content: '.';
+    //   border-radius: 10px;
 
-    }
+    // }
   }
 
   > h4 {
     font-size: 1.2em;
 
-    &::before {
-      margin-right: 0.3em;
-      width: 0.2em;
-      display: inline-block;
-      background: var(--ifm-color-primary);
-      color: transparent;
-      content: '.';
-    }
+    // &::before {
+    //   margin-right: 0.3em;
+    //   width: 0.2em;
+    //   display: inline-block;
+    //   background: var(--ifm-color-primary);
+    //   color: transparent;
+    //   content: '.';
+    // }
   }
 
   > a {
@@ -699,7 +699,7 @@ html[data-theme='dark'] {
   }
 }
 
-/* 文档侧栏字体大小 */
+/* 文档侧栏边字体大小 */
 .menu__list-item > .menu__link[tabindex] {
   font-size: 0.83rem;
   // font-weight: 500/* normal */;
@@ -888,9 +888,12 @@ code {
   text-align: center;
 
   /* 渐变色 */
-  // background-image: -moz-linear-gradient(45deg, rgb(173, 255, 225), rgb(255, 224, 204));
-  // background-image: -webkit-linear-gradient(45deg, rgb(173, 255, 225), rgb(255, 224, 204));
-  // background-image: linear-gradient(45deg, rgb(173, 255, 225), rgb(255, 224, 204));
+  // background-image: -moz-linear-gradient(180deg, rgb(206, 253, 244), rgb(206, 221, 253));
+
+  // background-image: -webkit-linear-gradient(180deg, rgb(206, 253, 244), rgb(206, 221, 253));
+  
+  // background-image: linear-gradient(180deg, rgb(206, 253, 244), rgb(206, 221, 253));
+
   a {
     text-decoration: none;
   }
