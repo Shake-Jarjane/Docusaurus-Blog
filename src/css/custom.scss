@@ -11,9 +11,9 @@
   --ifm-color-primary-lighter: #b0e6ff;
   --ifm-color-primary-lightest: #d5f1fd;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Inter', ui-sans-serif, system-ui, -apple-system,
-    'Segoe UI', 'Helvetica Neue', 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  --ifm-font-family-base: 'Noto Sans', sans-serif, -apple-system, 'Inter', ui-sans-serif, system-ui,
+    'Segoe UI', 'Helvetica Neue',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji', consolas, sfmono-regular, menlo, monaco,
     'Liberation Mono', monospace;
 
@@ -190,7 +190,7 @@ html[data-theme='dark'] .theme-code-block {
 
   > h2 {
     font-size: 1.8em;
-    border-bottom: 1px solid #338bff;
+    border-bottom: 2px solid #338bff;
     margin-top: 1rem;
 
     // &::before {

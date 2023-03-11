@@ -1,17 +1,16 @@
 ---
 id: introduction
 slug: /Stack
-title: None
+title: README
+last_update:
+  date: 2023/02/19
 keywords:
-  - 前端
-  - 后端
-  - Vue
-  - React
-  - JavaScript
-  - 逆向
-  - HTTP
+  - C/C++
+  - STM32
+  - Linux
+  - ROS
 ---
 
+**这里记录着学习过程中的部分笔记，方便自己查阅，也避免随着时间的推移而忘却**
 
-
-**做到即查即用，能复制粘贴解决的，就绝不百度。**
+**同时也希望能够给有需要的人提供一些帮助**

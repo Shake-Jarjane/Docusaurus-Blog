@@ -48,7 +48,7 @@
 
 ```sh
 git clone https://github.com/Shake-Jarjane/Docusaurus-Blog.git
-cd blog
+cd Docusaurus-Blog
 yarn
 yarn start
 ```
