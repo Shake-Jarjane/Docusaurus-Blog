@@ -103,12 +103,12 @@ const config = {
     },
     footer: {
       style: 'light',
-      logo: {
-        src: "/img/buildwith.png",
-        href: "https://docusaurus.io/zh-CN/",
-        target: "_blank",
-        height: 50,
-      },
+      // logo: {
+      //   src: "/img/buildwith.png",
+      //   href: "https://docusaurus.io/zh-CN/",
+      //   target: "_blank",
+      //   height: 50,
+      // },
       links: [
         // {
         //   title: '学习',
@@ -176,7 +176,7 @@ const config = {
         // },
       ],
       // copyright: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px" src="/img/buildwith.png" /></a> </br> Copyright © 2022 - ${new Date().getFullYear()} By Shake 🎶 | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh"> CC BY-NC-SA 4.0 </a>`
-      copyright: `Copyright © 2022 - ${new Date().getFullYear()} By Shake 🎶 | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh"> CC BY-NC-SA 4.0 </a>`
+      copyright: `<strong>Copyright © 2022 - ${new Date().getFullYear()} By Shake 🎶 | <a href="https://docusaurus.io/zh-CN/" target="_blank"> Build with Docusaurus</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank"> CC BY-NC-SA 4.0 </a></strong>`
       // copyright: `Copyright © 2022-${new Date().getFullYear()}. <br>Built with Docusaurus.| <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a> <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"></a></p> `
     
     },
