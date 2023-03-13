@@ -12,7 +12,7 @@ last_update:
 import HighLight from "@site/src/components/HighLight"
 
 :::info 提示
-本文是基于双系统的安装方案，需提前准备一个 <HighLight>[Ubuntu 启动盘](/docs/Stack/Linux/如何制作Ubuntu启动盘.md)</HighLight>
+本文是基于双系统的安装方案，需提前准备一个启动盘，参考<HighLight>[如何制作Ubuntu启动盘](/docs/Stack/Linux/如何制作Ubuntu启动盘.md)</HighLight>
 :::
 :::info 提示
 因为我在安装的时候没有进行截图或拍照保存，所以部分图片选用了别人的，可能会有一点点不同，但大体的流程是一样的

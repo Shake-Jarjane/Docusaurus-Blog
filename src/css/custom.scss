@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
 // @import 'lxgw-wenkai-screen-webfont/style.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Roboto&display=swap');
+
+
 
 /* 主题色 */
 :root {
@@ -12,8 +15,8 @@
   --ifm-color-primary-light: #2cb8fb;
   --ifm-color-primary-lighter: #b0e6ff;
   --ifm-color-primary-lightest: #d5f1fd;
-  --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Noto Sans', sans-serif, -apple-system, 'Inter', ui-sans-serif, system-ui,
+  --ifm-code-font-size: 95%; /* 95% */
+  --ifm-font-family-base: 'Noto Sans SC', sans-serif, -apple-system, 'Inter', ui-sans-serif, system-ui,
     'Segoe UI', 'Helvetica Neue',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji', consolas, sfmono-regular, menlo, monaco,
@@ -21,6 +24,9 @@
 
   --ifm-heading-font-family: var(var(--ifm-font-family-base))
   /* --content-font-family: "Raleway", "Kai", "楷体", "Kaiti", serif; */
+
+  // font-family: 'Noto Sans SC', sans-serif;
+// font-family: 'Roboto', sans-serif;
 
 
   --ifm-navbar-shadow: 0 4px 28px rgb(0 0 0 / 10%);
@@ -137,7 +143,9 @@ html[data-theme='dark'] :is(h1, h2, h3, h4, h5, h6) {
 }
 
 body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+  // font-family: 'Noto Sans SC', sans-serif;
+
+  font-family: 'Noto Sans SC', sans-serif, Inter, ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji', consolas, sfmono-regular, menlo, monaco,
@@ -186,6 +194,10 @@ html[data-theme='dark'] .theme-code-block {
 
 /* markdown文本字体 */
 .markdown {
+  // font-family: 'Noto Sans SC', sans-serif;
+
+  // font-family: 'NotoSans-Black';
+
   > h1 {
     font-size: 2.2em;
   }
@@ -231,14 +243,10 @@ html[data-theme='dark'] .theme-code-block {
   }
 
   p {
-    font-size: 1.1em;
-    font-weight: 500;
+    // font-family: 'NotoSans-Black';
+    font-size: 1.18rem;
+    // font-weight: 600;
   }
-
-  // code {
-  //   font-size: 1.0em;
-  //   font-weight: 1000;
-  // }
 
   // td{
   //   font-size: 5.1em;
@@ -256,6 +264,11 @@ html[data-theme='dark'] .theme-code-block {
     // border-radius: 10px;
 
   }
+
+  // code {
+  //   font-family: var(--ifm-font-family-base);
+  //   // font-size: 90%;
+  // }
 
 }
 
@@ -295,7 +308,7 @@ html[data-theme='dark'] .theme-code-block {
 .dropdown,
 .navbar__title,
 .menu {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1.1rem;
 }
 
@@ -703,10 +716,10 @@ html[data-theme='dark'] {
 
 /* 文档侧栏边字体大小 */
 .menu__list-item > .menu__link[tabindex] {
-  font-size: 0.83rem;
-  // font-weight: 500/* normal */;
-  letter-spacing: 0.8px;
-  line-height: 1.8em;
+  font-size: 0.96rem;
+  font-weight: 700;
+  // letter-spacing: 0.2px;
+  line-height: 1.2em;
 }
 
 /* 侧边栏左侧线条 */
@@ -1110,7 +1123,7 @@ html[data-theme='dark'] .header-github-link:before {
 
 .table-of-contents {
   font-size: 0.85rem;
-  font-weight: 550;
+  font-weight: 600;
 
   // transition: filter 0.2s ease-in-out, background-color 0.2s ease-in-out;
   // a {
@@ -1152,4 +1165,22 @@ html[data-theme='dark'] .tabs-container{
     code {
       background: #344658;
     }
+}
+
+/* 键盘按键样式 */
+key {
+  margin: 0px 0.2em;
+  padding: 0.1em 0.6em;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  color: rgb(51, 51, 51);
+  font-family: "Arial Black", Impact;
+  font-size: 0.8rem;
+  display: inline-block;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  background-color: rgb(247, 247, 247);
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }

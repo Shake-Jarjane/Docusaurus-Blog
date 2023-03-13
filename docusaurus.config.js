@@ -63,7 +63,7 @@ const config = {
             { label: '🛠 Site', to: 'docs/Site/',},
             { label: '💻 Stack', to: 'docs/Stack/',},
             { label: '🧰 Tool', to: 'docs/tools/',},
-            { label: 'Test', to: 'docs/Test',},
+            // { label: 'Test', to: 'docs/Test',},
           ],
         },
         {
@@ -333,7 +333,27 @@ const config = {
       },
     ],
   ],
-  stylesheets: [],
+  stylesheets: [
+    // {
+    //   href: "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
+    //   type: "text/css",
+    //   integrity: "sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc",
+    //   crossorigin: "anonymous",
+    // },
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: "anonymous",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap",
+    },
+  ],
   i18n: {
     defaultLocale: 'zh',
     locales: ['zh'],

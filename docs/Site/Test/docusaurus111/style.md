@@ -112,6 +112,10 @@ import Shortcut from "@site/src/components/Shortcut/index";
   <Shortcut>ctrl</Shortcut> + <Shortcut>C</Shortcut>
 </div>
 
+按时打算撒多快捷键<key>Ctrl</key>+<key>A</key>asd asd as
+
+阿萨德阿萨德按时
+
 <!-- <iframe width="900" height="515" src="https://www.bilibili.com/video/BV1rg411x7Z8/?spm_id_from=333.1007.tianma.9-1-31.click&vd_source=e08c248aced8612d6c81f01b1dad03c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 <DisplayFlex>
