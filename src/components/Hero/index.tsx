@@ -84,16 +84,16 @@ function Hero() {
       <div className={styles['header-content-inner']}>
         <div className={clsx('hero__title', styles['header-title'])}>
           <p>
-            {`Shake's `}
+            {`Shake's Blog`}
           </p>
        </div>
-         <div className={styles['header-right']}>
-           <div className={clsx('hero__subtitle', styles['header-describe'])}>
-             <p>
-              <em>{`BLOG`}</em>
-             </p>
-           </div>
-         </div>
+      {/* <div className={styles['header-right']}>
+        <div className={clsx('hero__subtitle', styles['header-describe'])}>
+          <p>
+            <em>{`BLOG`}</em>
+          </p>
+        </div>
+      </div> */}
       </div>
 
       {/* <div className={styles['typing-demo']}> */}
