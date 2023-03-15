@@ -221,7 +221,7 @@ function Hero() {
               </a>&nbsp;&nbsp;&nbsp; */}
 
               <button className={styles.btn}>
-                <span>Links 💤</span>
+                <span>🥱 💤</span>
                   <div className={styles.container}>
                     <a className="dropdown dropdown--hoverable">
                       <a href={socials.github} target="_blank">

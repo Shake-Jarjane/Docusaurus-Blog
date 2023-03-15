@@ -2,8 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import { translate } from '@docusaurus/Translate';
-import IconLightMode from '../Icon/LightMode';
-import IconDarkMode from '../Icon/DarkMode';
+import IconLightMode from './Icon/LightMode';
+import IconDarkMode from './Icon/DarkMode';
 import styles from './styles.module.css';
 
 function ColorModeToggle({

@@ -870,7 +870,7 @@ html[data-theme='dark'] .card:hover .back::before {
   cursor: pointer;
   width: 140px;
   height: 45px;
-  background-color: #eeeeed;
+  background-color: #eeeeed00;
   border-radius: 80px;
   border: none;
   padding: 0 30px;
@@ -880,6 +880,7 @@ html[data-theme='dark'] .card:hover .back::before {
 }
  
 .btn:hover {
+  background-color: #eeeeed;
   transform: scale(1.1);
 }
  
@@ -891,7 +892,7 @@ html[data-theme='dark'] .card:hover .back::before {
   border-radius: 80px;
   font-family: 'inherit';
   font-weight: 600;
-  font-size: 17px;
+  font-size: 25px;
   text-align: center;
   line-height: 45px;
   letter-spacing: 2px;

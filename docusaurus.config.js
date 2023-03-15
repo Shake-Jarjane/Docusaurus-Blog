@@ -86,8 +86,13 @@ const config = {
           ],
         },
         {
-          label: '🔗 友链&导航', to: 'website',
+          label: '🔗 Links', 
+          to: '#',
           position: 'right',
+          items: [
+            { label: '🗺 友链&导航', to: 'website'},
+            { label: '🗃 Project', to: 'project'},
+          ],
         },
         {
           href: 'https://github.com/Shake-Jarjane/Docusaurus-Blog', className: 'header-github-link',

@@ -5,7 +5,7 @@
 .toggleButton {
   width: 52px;
   height: 26px;
-  background: #d8dbe0;
+  background: #ebedf0;
   border-radius: 160px;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 [data-theme='dark'] .toggleButton {
-  background: #585e76;
+  background: #1b1b1d;
 }
 
 .toggleButton span {

@@ -15,7 +15,7 @@
   --ifm-color-primary-light: #2cb8fb;
   --ifm-color-primary-lighter: #b0e6ff;
   --ifm-color-primary-lightest: #d5f1fd;
-  --ifm-code-font-size: 95%; /* 95% */
+  --ifm-code-font-size: 85%; /* 95% */
   --ifm-font-family-base: 'Noto Sans SC', sans-serif, -apple-system, 'Inter', ui-sans-serif, system-ui,
     'Segoe UI', 'Helvetica Neue',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -182,6 +182,9 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb {
   --prism-background-color: #1e1e1e !important;
   // --prism-background-color: #292d3e !important;
   font-size: large;
+}
+.prism-code {
+  border-radius: 0;
 }
 
 html[data-theme='dark'] .theme-code-block {
@@ -616,7 +619,7 @@ html[data-theme='dark'] {
   .pagination-nav {
 
     border: 0 solid #615e5e;
-    margin: 2em 0;
+    margin: 3rem 0;
     border-top-width: 2px;
     padding-top: 0.5rem;
 
@@ -885,6 +888,11 @@ html[data-theme='dark'] .menu__list .menu__list{
 
 code {
   color: var(--ifm-code-color);
+  border-radius: 0;
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-code-font-size);
+  padding: 0.2rem ;
+  border: 0;
 }
 
 .bloginfo__content {
@@ -1183,4 +1191,96 @@ key {
   -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+}
+
+// details[open] {
+//   background-color: #f6f8fa;
+//   border-radius: 5px;
+//   border: 0px solid var(--ifm-alert-border-color);
+
+//   box-shadow: 0px 2px 6px #0003;
+// }
+
+
+
+summary::after {
+  content: " 📘";
+}
+
+details[open] summary::after {
+  content: " 📖";
+}
+
+/* Navbar search */
+.navbar .DocSearch-Button {
+  width: 8rem;
+}
+
+.navbar__items .DocSearch-Button {
+  height: 2.25rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #000;
+  background-color: #ebedf0;
+  font-family: var(--ifm-font-family-base);
+}
+.navbar__items .DocSearch-Button:active,
+.navbar__items .DocSearch-Button:focus,
+.navbar__items .DocSearch-Button:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+.navbar__items .DocSearch-Button .DocSearch-Search-Icon {
+  width: 1rem;
+  height: 1rem;
+  color: #000;
+}
+// .navbar__items .DocSearch-Button:active .DocSearch-Search-Icon ,
+// .navbar__items .DocSearch-Button:focus .DocSearch-Search-Icon ,
+// .navbar__items .DocSearch-Button:hover .DocSearch-Search-Icon  {
+//   color: var(--ifm-color-primary-darkest);
+// }
+.DocSearch .DocSearch-Button-Keys {
+  display: none;
+}
+/* More qualifiers than built-in styles */
+.DocSearch-Modal .DocSearch-Form,
+.DocSearch-Modal .DocSearch-Hit,
+.DocSearch-Modal .DocSearch-Hit a {
+  border-radius: 5px;
+}
+
+html[data-theme='dark'] .navbar__items .DocSearch-Button{
+  color:#f5f6f7;
+  background-color: #1b1b1d;
+}
+
+html[data-theme='dark'] .navbar__items .DocSearch-Button .DocSearch-Search-Icon {
+  color: #f5f6f7;
+}
+
+html[data-theme='dark'] .navbar__items .DocSearch-Button:active,
+html[data-theme='dark'] .navbar__items .DocSearch-Button:focus,
+html[data-theme='dark'] .navbar__items .DocSearch-Button:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+
+@media only screen and (max-width: 996px) {
+  .navbar__items .DocSearch-Button {
+    width: 3rem;
+  }
+}
+
+/* 引用块 */
+blockquote {
+  border-left-color: var(--ifm-color-primary);
+  background-color: #f7f7f7;
+  border-left: 6px solid var(--ifm-color-primary);
+  // color: #6a737d;
+  font-size: 100%;
+  margin: 1rem 0 1rem;
+  padding: 0.5rem 1rem;
+}
+
+html[data-theme='dark'] blockquote{
+  background-color: #2e303d;
 }
