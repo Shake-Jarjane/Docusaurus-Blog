@@ -25,6 +25,9 @@ const config = {
     announcementBar: {
       id: 'announcementBar-3',
       content: announcementBarContent,
+      backgroundColor: '#6565d5',
+      textColor: '#fff',
+      isCloseable: true,
     },
     metadata: [
       {
@@ -97,7 +100,6 @@ const config = {
         {
           href: 'https://github.com/Shake-Jarjane/Docusaurus-Blog', className: 'header-github-link',
           position: 'right',
-          description:"本站源码",
         },
         // 注释就是去掉导航栏的语言下拉选择栏
         //  {
@@ -294,7 +296,7 @@ const config = {
         blogSidebarTitle: '所有文章 🛴',
         blogSidebarCount: ALL,
         /* 首页博文每页显示的文章数 */
-        postsPerPage: 8,
+        postsPerPage: 5,
         showReadingTime: true,
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
         frontMatter.hide_reading_time ? 

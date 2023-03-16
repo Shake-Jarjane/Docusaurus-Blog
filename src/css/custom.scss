@@ -886,14 +886,14 @@ html[data-theme='dark'] .menu__list .menu__list{
   }
 }
 
-code {
-  color: var(--ifm-code-color);
-  border-radius: 0;
-  font-family: var(--ifm-font-family-base);
-  font-size: var(--ifm-code-font-size);
-  padding: 0.2rem ;
-  border: 0;
-}
+// code {
+//   // color: var(--ifm-code-color);
+//   border-radius: 0;
+//   font-family: var(--ifm-font-family-base);
+//   font-size: var(--ifm-code-font-size);
+//   padding: 0.2rem ;
+//   border: 0;
+// }
 
 .bloginfo__content {
   position: sticky;
@@ -1193,6 +1193,7 @@ key {
   -webkit-border-radius: 3px;
 }
 
+/* 折叠块 */
 // details[open] {
 //   background-color: #f6f8fa;
 //   border-radius: 5px;
@@ -1200,8 +1201,6 @@ key {
 
 //   box-shadow: 0px 2px 6px #0003;
 // }
-
-
 
 summary::after {
   content: " 📘";
@@ -1211,7 +1210,7 @@ details[open] summary::after {
   content: " 📖";
 }
 
-/* Navbar search */
+/* Navbar search 搜索框 */
 .navbar .DocSearch-Button {
   width: 8rem;
 }
