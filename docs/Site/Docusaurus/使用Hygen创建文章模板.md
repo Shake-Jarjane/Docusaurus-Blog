@@ -117,6 +117,7 @@ module.exports = {
 ```bash
 hygen blog new --path demo1/demo2 --title helloword
 ```
+
 hygen 后面紧接着模板名称，参数（path、title）的顺序无固定要求，执行命令后就可以很方便地根据参数与模板来生成新的 Markdown 文件了
 
 ## 参考与致谢
