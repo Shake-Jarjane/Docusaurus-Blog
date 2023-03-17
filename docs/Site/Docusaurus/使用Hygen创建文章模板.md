@@ -13,11 +13,9 @@ import HighLight from "@site/src/components/HighLight"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Docusaurus 目前并没有提供这样一种快速新建文章的方法，但 Markdown 需要设置一些前言字段或 import 一些组件，数据重复性的操作，每次写新文章的时候都要手动编写头部字段内容或者复制粘贴我嫌有点麻烦，于是引入了 <HighLight>Hygen</HighLight> 来解决这个问题。
+Docusaurus 目前并没有提供这样一种快速新建文章的方法，但 Markdown 需要设置一些前言字段或 import 一些组件，数据重复性的操作，每次写新文章的时候都要手动编写头部字段内容或者复制粘贴我嫌有点麻烦，于是引入了 <HighLight>Hygen</HighLight> 来解决这个问题，这是一个简单、快速、可扩展的代码生成器，其用途是**帮助开发者自动创建模板文件的工具，旨在提高开发效率。**
 
-<HighLight>Hygen</HighLight> 是一个简单、快速、可扩展的代码生成器，其用途是帮助开发者自动创建模板文件的工具，旨在提高开发效率。
-
-## Hygen Start
+## Start Hygen
 
 ### 安装
 
@@ -78,7 +76,7 @@ hygen generator new [模板名称] # 如blog
 
 ### 自定义模板
 
-**`<%=  %>`** 可以通过命令传递参数，以及赋值，如文件名、路径、日期等，比如根据我自己的需求所定义的模板
+**`<%=  %>`** 可以通过命令传递参数，以及赋值，如文件名、路径、日期等自定义参数，以下是我根据自己的需求所定义的模板
 
 ```bash
 ---

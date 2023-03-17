@@ -256,7 +256,7 @@ function Hero() {
               <DayAndNight />
             </div><br/>
             <a /* href="https://github.com/Shake-Jarjane/Docusaurus-Blog/commits/main" */ target="_blank">
-              <img src="https://img.shields.io/github/last-commit/Shake-Jarjane/Docusaurus-Blog?color=blue&style=for-the-badge" />
+              <img src="https://img.shields.io/github/last-commit/Shake-Jarjane/Docusaurus-Blog?color=blue&style=flat-square" />
             </a>
             <br/><br/>
 

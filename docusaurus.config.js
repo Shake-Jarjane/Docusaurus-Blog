@@ -25,8 +25,8 @@ const config = {
     announcementBar: {
       id: 'announcementBar-3',
       content: announcementBarContent,
-      backgroundColor: '#6565d5',
-      textColor: '#fff',
+      // backgroundColor: '#6565d5',
+      // textColor: '#fff',
       isCloseable: true,
     },
     metadata: [
