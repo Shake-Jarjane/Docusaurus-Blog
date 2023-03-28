@@ -5,6 +5,7 @@ date: 2023-01-24
 authors: Shake
 tags: [随笔]
 keywords: [随笔]
+# sticky: 1
 ---
 
 import LinkList from "@site/src/components/LinkList"
@@ -62,7 +63,7 @@ import HighLight from "@site/src/components/HighLight"
   ]}
 />
 
-## 参考&致谢
+## 参考与致谢
 
 - **[愧怍的小站](https://kuizuo.cn/)**
 - **[为什么你需要一个知识库](https://wiki-power.com/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AA%E7%9F%A5%E8%AF%86%E5%BA%93)**

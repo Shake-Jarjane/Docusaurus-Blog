@@ -113,10 +113,12 @@ module.exports = {
 ### 使用模板新建文章
 
 ```bash
-hygen blog new --path demo1/demo2 --title helloword
+hygen blog new --path test/demo --title helloword
 ```
 
 hygen 后面紧接着模板名称，参数（path、title）的顺序无固定要求，执行命令后就可以很方便地根据参数与模板来生成新的 Markdown 文件了
+
+> 另外 Hygen 还有很大的扩展性，可以自行去阅读官方文档进行扩展
 
 ## 参考与致谢
 

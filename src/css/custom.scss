@@ -272,6 +272,18 @@ html[data-theme='dark'] .theme-code-block {
   //   // font-size: 90%;
   // }
 
+  table tbody tr {
+    transition: box-shadow 0.2s;
+  }
+
+  table tbody tr:focus,
+  table tbody tr:hover {
+  outline: none;
+  box-shadow: 1000px 1000px 0 0 inset rgba(180, 225, 244);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
 }
 
 // [data-theme="dark"] .markdown {
@@ -362,10 +374,13 @@ article .markdown > ul ol {
 /* 导航栏 */
 .navbar__link,
 .dropdown,
-.navbar__title,
-.menu {
+.navbar__title{
   font-weight: 600;
   font-size: 1.1rem;
+}
+.menu {
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .bloghome__scroll-down {
@@ -772,10 +787,11 @@ html[data-theme='dark'] {
 
 /* 文档侧栏边字体大小 */
 .menu__list-item > .menu__link[tabindex] {
-  font-size: 0.96rem;
+  // font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   // letter-spacing: 0.2px;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 /* 侧边栏左侧线条 */
@@ -1336,3 +1352,39 @@ blockquote {
 html[data-theme='dark'] blockquote{
   background-color: #2e303d;
 }
+
+// .theme-doc-sidebar-menu {
+
+//   .menu__list-item {
+//     // margin-top: 0;
+//     .menu__caret {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       //position: absolute;
+//       top: 0px;
+//       left: 0px;
+//       padding: 0 0;
+//     }
+
+//     .menu__caret::before,
+//     .menu__link--sublist::after {
+//       min-width: 1.5rem;
+//       width: 1.5rem;
+//       height: 1.5rem;
+//       background: url('/svg/chevron-top.svg') no-repeat;
+//       background-position: center center;
+//       min-height: 29.5px;
+//     }
+
+//     .menu__list-item-collapsible {
+//       &::before {
+//         height: auto;
+//         background-position: center center;
+//         transform: rotate(90deg);
+//         transition: all 0.3s ease-in-out;
+//       }
+
+//     }
+//   }
+// }

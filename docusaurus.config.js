@@ -1,14 +1,14 @@
 const { ALL } = require('dns')
 const path = require('path')
 const beian = 'XICP备20200XXXX号-2'
-const license = 'CC BY-NC 4.0'
+const license = 'CC BY-NC-SA 4.0'
 
 const announcementBarContent = `慢慢迁移ing 👋`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Shake's Blog",
-  titleDelimiter: '🦖',
+  titleDelimiter: '-',
   url: 'https://Shaking.site',            // 网站的 url 地址
   baseUrl: '/',                           // 解析后的地址，如果设为 wsite，则 url 解析为https://xxx.xx/site
   projectName: 'Shake-Jarjane.github.io', // {username}.github.io
@@ -70,7 +70,7 @@ const config = {
           ],
         },
         {
-          label: '🗃 Blog',
+          label: '🌈 Blog',
           position: 'left',
           // to: '/Hello-Blog',
           items: [
@@ -183,7 +183,7 @@ const config = {
         // },
       ],
       // copyright: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px" src="/img/buildwith.png" /></a> </br> Copyright © 2022 - ${new Date().getFullYear()} By Shake 🎶 | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh"> CC BY-NC-SA 4.0 </a>`
-      copyright: `<strong>Copyright © 2022 - ${new Date().getFullYear()} By Shake 🎶 | <a href="https://docusaurus.io/zh-CN/" target="_blank"> Build with Docusaurus</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank"> CC BY-NC-SA 4.0 </a></strong>`
+      copyright: `<strong>Copyright © 2022 - ${new Date().getFullYear()} By Shake 🎶 | <a href="https://docusaurus.io/zh-CN/" target="_blank"> Build with Docusaurus</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank"> ${license} </a></strong>`
       // copyright: `Copyright © 2022-${new Date().getFullYear()}. <br>Built with Docusaurus.| <a href="http://beian.miit.gov.cn/" >${beian}</a> | <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">${license}</a> <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"></a></p> `
     
     },
