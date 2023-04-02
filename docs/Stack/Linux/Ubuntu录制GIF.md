@@ -12,12 +12,13 @@ keywords: [ubuntu, linux, peek]
 
 import HighLight from "@site/src/components/HighLight"
 
-这里推荐一款 Ubuntu 里简单好用的 GIF 录制软件：<HighLight>Peek</HighLight>
+这里推荐一款 Ubuntu 里简单好用的 GIF 录制软件：<HighLight>Peek</HighLight><br/>
+如果是 win 系统，推荐使用<HighLight>ScreenToGif</HighLight>，参考[这篇文章](docs/tools/win系统录制GIF.md)
 
 **获取 Peek app 源**
 
 ```bash
-udo add-apt-repository ppa:peek-developers/stable
+sudo add-apt-repository ppa:peek-developers/stable
 ```
 
 **更新源**
