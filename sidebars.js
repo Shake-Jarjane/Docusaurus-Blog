@@ -136,7 +136,7 @@ const sidebars = {
       ],
     },
     {
-      label: '规划控制',
+      label: 'Motion Planning',
       type: 'category',
       link: {
         title: '规划控制',
